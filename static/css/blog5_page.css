@@ -1,0 +1,232 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+
+/* navbar start */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.171);
+    backdrop-filter: blur(42px);
+    /* Blur effect */
+    animation: slideDown 1s ease-out;
+    /* Animation effect */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.nav-link {
+    margin-right: 20px;
+    /* Adjust the value as needed */
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 2px;
+    background-color: #000;
+    /* Adjust the color as needed */
+    position: absolute;
+    /* Adjust the value to position the underline */
+    left: 30%;
+
+
+}
+
+.nav-link.active {
+    font-weight: bold;
+    /* Make the active link bold */
+
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #1D2538;
+}
+
+
+.navbar-brand img {
+   height: 35px;
+}
+
+
+.main-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1D2538;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.introduction {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #979797;
+    margin-bottom: 1.5rem;
+}
+
+
+.point-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1D2538;
+    margin-top: 1.5rem;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: 300;
+    color: #1D2538;
+    margin-top: 1.5rem;
+}
+
+.point-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #979797;
+    margin-bottom: 1rem;
+}
+
+
+.sub-point {
+    font-size: 14px;
+    color: #666;
+    margin-left: 1.5rem;
+}
+
+
+.point-1, .point-2, .point-3,
+.point-4, .point-5, .point-6  {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.landingpage_footermain_main_div {
+    display: flex;
+    justify-content: center;
+}
+
+.landingpage_footer_div2 {
+    width: 230px;
+}
+
+.landingpage_footer_img_logo {
+    height: 50px;
+}
+
+.landingpage_footer_socialmedia_div {
+    gap: 10px;
+    display: flex;
+}
+
+.landingpage_footer_product_title {
+    font-weight: 700;
+    border-bottom: 1px solid;
+    display: inline-block;
+    padding-bottom: 2px;
+
+
+}
+
+.landingpage_footer_product_options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    color: #d1d1d1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    color: #d1d1d1;
+}
+
+.landingpage_footer_contactus_main_div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.landingpage_footer_contactus_main_div_icon {
+    height: 20px;
+}
+
+.landingpage_footer_contactus_main_div_icon2 {
+    height: 30px;
+}
+
+.landingpage_footer_coptright_line {
+    background-color: #ffffff;
+}
+
+.landingpage_footer_coptright_line2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+}
+
+.landingpage_footer_options {
+    color: #d1d1d1;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+
+.footer_div {
+    background-color: #2D323B;
+    padding: 50px;
+}
+
+.landingpage_footer_main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .landingpage_footer_coptright_line2 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        text-align: center;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .footer_div {
+        padding: 30px;
+
+    }
+}
+
+@media (max-width: 576px) {
+
+
+    .footer_div {
+        padding: 0px;
+
+    }
+}
+
