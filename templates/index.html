@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="../static/css/bootstrap.css" rel="stylesheet" />
+  <link href="../static/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+  </style>
+   
+
+</head>
+
+<body>
+  <section>
+    <img class="landingpage_hero_main_img" src="../static/img/Rectangle 23785.png" />
+  </section>
+  <div>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="../static/img/dark logo.png" height="50" alt="Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lookIntoSection">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about_us_web.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blogs_web.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./get_in_touch_web.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <div class="container-fluid p-0">
+      <!-- Video Player for Desktop -->
+      <div id="desktopVideo" class="video-container">
+        <!-- Navbar Links for Desktop -->
+        <div class="navbar-horizontal">
+          <a href="#" onclick="changeVideo(0)"><img src="../static/img/technology 1.png" alt="" /> INDUSTRY AUTOMATION</a>
+          <a href="#" onclick="changeVideo(1)"><img src="../static/img/technology 2.png" alt="" /> HOSPITAL AUTOMATION</a>
+          <a href="#" onclick="changeVideo(2)"><img src="../static/img/technology 4.png" alt="" /> CLEANROOM AUTOMATION</a>
+      </div>
+        <video class="video-player" id="desktopVideoPlayer" autoplay muted loop>
+          <source src="../static/img/0000-0865.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Video Carousel for Mobile -->
+      <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Indicators (Dots) -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Video 1"></button>
+          <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1" aria-label="Video 2"></button>
+          <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="2" aria-label="Video 3"></button>
+          <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="3" aria-label="Video 4"></button>
+        </div>
+
+        <!-- Carousel Inner (Videos) -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="video-container">
+              <video class="video-player" autoplay muted loop>
+                <source src="../static/img/0000-0865.mp4" type="video/mp4" />
+
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <video class="video-player" autoplay muted loop>
+                <source src="../static/img/cleanroom.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <video class="video-player" autoplay muted loop>
+                <source src="../static/img/0000-0375.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls (Previous and Next) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- look into section start -->
+    <!-- look into section start -->
+<section id="lookIntoSection" data-aos="fade-up" data-aos-duration="2000">
+
+      <div class="multiple_carousal_div">
+        <div class="p-4">
+          <h4 class="landingpage_lookintosection pb-2">LOOK INTO SECTION</h4>
+
+          <div  class="landingpage_options_section1">
+            <div class="landingpage_options_sub_section" data-target="product1">
+              <div class="landingpage_options_sub_section_title">
+                INDUSTRIAL AUTOMATION
+              </div>
+            </div>
+            <div class="landingpage_options_sub_section" data-target="product2">
+              <div class="landingpage_options_sub_section_title">
+                SMART METERS
+              </div>
+            </div>
+            <div class="landingpage_options_sub_section" data-target="product3">
+              <div class="landingpage_options_sub_section_title">
+                FACTORY AUTOMATION
+              </div>
+            </div>
+            <div class="landingpage_options_sub_section" data-target="product4">
+              <div class="landingpage_options_sub_section_title">
+                CLEANROOM AUTOMATION
+              </div>
+            </div>
+          </div>
+
+          <select id="landingpage_dropdown_options_sub_section" class="landingpage_dropdown_options_sub_section">
+            <option value="product1">INDUSTRIAL AUTOMATION</option>
+            <option value="product2">SMART METERS</option>
+            <option value="product3">FACTORY AUTOMATION</option>
+            <option value="product4">CLEANROOM AUTOMATION</option>
+          </select>
+
+          <!-- Product 1 -->
+          <div class="landingpage_multiple_product_carousal_container landingpage_multiple_product_carousal"
+            id="product1">
+            <div class="landingpage_carousal_button_container">
+              <button class="landingpage_look_into_section_carousel_button landingpage_look_into_section_prev_button"
+                data-carousel="carousel1">
+                &#10094;
+              </button>
+              <button class="landingpage_look_into_section_carousel_button landingpage_look_into_section_next_button"
+                data-carousel="carousel1">
+                &#10095;
+              </button>
+            </div>
+
+            <div class="landingpage_look_into_section_carousel_part" id="carousel1">
+              <!-- Carousel items -->
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=THDP">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_THDP.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div style="color: #1d2538; text-decoration: none">
+                    <h4 class="landing_page_product_title">TEMPERATUR,HUMIDITY & DIFFERENTIAL PRESSURE</h4>
+                    <p class="landing_page_product_description">
+                      Precisely controlled temperature, regulated humidity,
+                      and monitored differential pressure ensure optimal
+                      cleanroom conditions and contamination prevention.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=THDP"></a>
+                    <div>  
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                
+                </div>
+              </div>
+              <!-- Carousel items -->
+
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=TUBE_LIGHT">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_tube_light.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">TUBE LIGHT</h4>
+                    <p class="landing_page_product_description">
+                      Tube lights provide bright, even illumination for
+                      various spaces, offering energy efficiency and a sleek
+                      design suitable for both commercial and residential
+                      environments.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=TUBE_LIGHT">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=STREET_LIGHT">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_street_light.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">STREET LIGHT</h4>
+                    <p class="landing_page_product_description">
+                      Street lights provide reliable, wide-area illumination
+                      for roadways and public spaces, ensuring safety and
+                      visibility during nighttime and low-light conditions.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=STREET_LIGHT">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=SMART_PLUG"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_smart_plug.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">SMART PLUG</h4>
+                    <p class="landing_page_product_description">
+                      Smart plugs enable remote control and monitoring of
+                      electrical devices, allowing automation, energy
+                      tracking, and convenient management via smartphone apps
+                      or voice commands.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=SMART_PLUG">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=SMOKE_DETECTOR">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_smoke_detector.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">SMART SMOKE DETECTOR</h4>
+                    <p class="landing_page_product_description">
+                      Smart smoke detectors provide advanced fire detection
+                      with real-time alerts, connectivity to other smart
+                      devices, and enhanced accuracy to ensure timely
+                      responses and safety
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=SMOKE_DETECTOR">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=OFFICE_LIGHT"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_clean_room_light.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">OFFICE LIGHT</h4>
+                    <p class="landing_page_product_description">
+                      office lights offer customizable brightness, automated
+                      scheduling, and energy efficiency, enhancing
+                      productivity and reducing costs with intelligent
+                      lighting control.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=OFFICE_LIGHT">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=FLOOD_LIGHT"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_flood_light.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">FLOOD LIGHT</h4>
+                    <p class="landing_page_product_description">
+                      Flood lights deliver intense, broad-spectrum
+                      illumination for expansive areas, enhancing visibility
+                      and security in outdoor and large-scale indoor settings.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=FLOOD_LIGHT">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=MULTI_CONTROL_PANEL"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_control_panel.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">MULTI MACHINE CONTROL PANEL</h4>
+                    <p class="landing_page_product_description">
+                      Control panels provide centralized management and
+                      monitoring of various systems, offering intuitive
+                      interfaces for operating, configuring, and controlling
+                      equipment and processes.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=MULTI_CONTROL_PANEL">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=HI-BAY_LIGHT">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_highbay_light.png" alt="Product 1" />
+                  </a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">HI-BAY LIGHT</h4>
+                    <p class="landing_page_product_description">
+                      High-bay lights deliver intense, wide-ranging
+                      illumination for large spaces, offering consistent
+                      brightness and energy efficiency in industrial and
+                      commercial settings.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=HI-BAY_LIGHT">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=DUST_SENSOR"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_dust_sensor.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">DUST PARTICLE MONITOR</h4>
+                    <p class="landing_page_product_description">
+                      Dust particle monitors detect and measure airborne
+                      particulate levels, ensuring air quality and cleanliness
+                      in sensitive environments.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=DUST_SENSOR">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=AIR_FLOW">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_air_flow.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">AIR FLOW MONITOR</h4>
+                    <p class="landing_page_product_description">
+                      Airflow monitors track and measure air movement and
+                      velocity, ensuring proper ventilation and maintaining
+                      optimal air quality in various environments.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=AIR_FLOW">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=CONTROL_PANEL"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_control_panels.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">SMART CONTROL PANEL</h4>
+                    <p class="landing_page_product_description"> 
+                      Control panels provide centralized management and
+                      monitoring of various systems, offering intuitive
+                      interfaces for operating, configuring, and controlling
+                      equipment and processes.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=CONTROL_PANEL">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Add more carousel items if needed -->
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="landingpage_multiple_product_carousal_container landingpage_multiple_product_carousal"
+            id="product2">
+            <div class="landingpage_carousal_button_container">
+              <button class="landingpage_look_into_section_carousel_button landingpage_look_into_section_prev_button"
+                data-carousel="carousel2">
+                &#10094;
+              </button>
+              <button class="landingpage_look_into_section_carousel_button landingpage_look_into_section_next_button"
+                data-carousel="carousel2">
+                &#10095;
+              </button>
+            </div>
+            <div class="landingpage_look_into_section_carousel_item">
+              <div class="landingpage_look_into_section_carousel_img_div">
+                <a href="products_page_web.html?product=SMART_METER"><img
+                    class="landingpage_look_into_section_carousel_product_img"
+                    src="../static/img/lookintosection/lookinto_section_control_panels.png" alt="Product 1" /></a>
+              </div>
+              <div class="landingpage_look_into_section_carousel_description_div">
+                <div>
+                  <h4 class="landing_page_product_title">SMART CONTROL PANEL</h4>
+                  <p class="landing_page_product_description"> 
+                    Control panels provide centralized management and
+                    monitoring of various systems, offering intuitive
+                    interfaces for operating, configuring, and controlling
+                    equipment and processes.
+                  </p>
+                </div>
+                <a href="products_page_web.html?product=SMART_METER">
+                  <div>
+                    <img src="../static/img/arrow_next.svg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="landingpage_multiple_product_carousal_container landingpage_multiple_product_carousal"
+            id="product4">
+            <div class="landingpage_carousal_button_container">
+              <button class="landingpage_look_into_section_carousel_button landingpage_look_into_section_prev_button"
+                data-carousel="carousel4">
+                &#10094;
+              </button>
+              <button class="landingpage_look_into_section_carousel_button landingpage_look_into_section_next_button"
+                data-carousel="carousel4">
+                &#10095;
+              </button>
+            </div>
+            <div class="landingpage_look_into_section_carousel_part" id="carousel4">
+              <!-- Carousel items -->
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=Air_&_Water_Shower"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/cleanroom_automation/Air_&_Water_Shower.jpg" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">SMART PLUG</h4>
+                    <p class="landing_page_product_description">
+                      Smart plugs enable remote control and monitoring of
+                      electrical devices, allowing automation, energy
+                      tracking, and convenient management via smartphone apps
+                      or voice commands.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=Air_&_Water_Shower">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Add more carousel items if needed -->
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=air_conditioning_systems"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/cleanroom_automation/air_conditioning_systems.jpg" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">SMART PLUG</h4>
+                    <p class="landing_page_product_description">
+                      Smart plugs enable remote control and monitoring of
+                      electrical devices, allowing automation, energy
+                      tracking, and convenient management via smartphone apps
+                      or voice commands.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=air_conditioning_systems">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=Fume_Cupboard"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/cleanroom_automation/Fume_Cupboard.jpg" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">SMART PLUG</h4>
+                    <p class="landing_page_product_description">
+                      Smart plugs enable remote control and monitoring of
+                      electrical devices, allowing automation, energy
+                      tracking, and convenient management via smartphone apps
+                      or voice commands.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=Fume_Cupboard">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+
+          <!-- ********************************** -->
+
+          <div class="landingpage_multiple_product_carousal_container landingpage_multiple_product_carousal"
+            id="product3">
+            <div class="landingpage_carousal_button_container">
+              <button class="landingpage_look_into_section_carousel_button landingpage_look_into_section_prev_button"
+                data-carousel="carousel3">
+                &#10094;
+              </button>
+              <button class="landingpage_look_into_section_carousel_button landingpage_look_into_section_next_button"
+                data-carousel="carousel3">
+                &#10095;
+              </button>
+            </div>
+            <div class="landingpage_look_into_section_carousel_part" id="carousel3">
+
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=CONTROL_PANEL"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_control_panels.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">SMART CONTROL PANEL</h4>
+                    <p class="landing_page_product_description"> 
+                      Control panels provide centralized management and
+                      monitoring of various systems, offering intuitive
+                      interfaces for operating, configuring, and controlling
+                      equipment and processes.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=CONTROL_PANEL">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=SMART_PLUG"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_smart_plug.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">SMART PLUG</h4>
+                    <p class="landing_page_product_description">
+                      Smart plugs enable remote control and monitoring of
+                      electrical devices, allowing automation, energy
+                      tracking, and convenient management via smartphone apps
+                      or voice commands.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=SMART_PLUG">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=TUBE_LIGHT">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_tube_light.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">TUBE LIGHT</h4>
+                    <p class="landing_page_product_description">
+                      Tube lights provide bright, even illumination for
+                      various spaces, offering energy efficiency and a sleek
+                      design suitable for both commercial and residential
+                      environments.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=TUBE_LIGHT">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=STREET_LIGHT">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_street_light.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">STREET LIGHT</h4>
+                    <p class="landing_page_product_description">
+                      Street lights provide reliable, wide-area illumination
+                      for roadways and public spaces, ensuring safety and
+                      visibility during nighttime and low-light conditions.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=STREET_LIGHT">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=THDP">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_THDP.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div style="color: #1d2538; text-decoration: none">
+                    <h4 class="landing_page_product_title">TEMPERATUR,HUMIDITY & DIFFERENTIAL PRESSURE</h4>
+                    <p class="landing_page_product_description">
+                      Precisely controlled temperature, regulated humidity,
+                      and monitored differential pressure ensure optimal
+                      cleanroom conditions and contamination prevention.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=THDP"></a>
+                    <div>  
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                
+                </div>
+              </div>
+
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=SMOKE_DETECTOR">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_smoke_detector.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">SMART SMOKE DETECTOR</h4>
+                    <p class="landing_page_product_description">
+                      Smart smoke detectors provide advanced fire detection
+                      with real-time alerts, connectivity to other smart
+                      devices, and enhanced accuracy to ensure timely
+                      responses and safety
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=SMOKE_DETECTOR">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=OFFICE_LIGHT"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_clean_room_light.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">OFFICE LIGHT</h4>
+                    <p class="landing_page_product_description">
+                      office lights offer customizable brightness, automated
+                      scheduling, and energy efficiency, enhancing
+                      productivity and reducing costs with intelligent
+                      lighting control.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=OFFICE_LIGHT">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=FLOOD_LIGHT"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_flood_light.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">FLOOD LIGHT</h4>
+                    <p class="landing_page_product_description">
+                      Flood lights deliver intense, broad-spectrum
+                      illumination for expansive areas, enhancing visibility
+                      and security in outdoor and large-scale indoor settings.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=FLOOD_LIGHT">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=MULTI_CONTROL_PANEL"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_control_panel.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">MULTI MACHINE CONTROL PANEL</h4>
+                    <p class="landing_page_product_description">
+                      Control panels provide centralized management and
+                      monitoring of various systems, offering intuitive
+                      interfaces for operating, configuring, and controlling
+                      equipment and processes.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=MULTI_CONTROL_PANEL">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=HI-BAY_LIGHT">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_highbay_light.png" alt="Product 1" />
+                  </a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">HI-BAY LIGHT</h4>
+                    <p class="landing_page_product_description">
+                      High-bay lights deliver intense, wide-ranging
+                      illumination for large spaces, offering consistent
+                      brightness and energy efficiency in industrial and
+                      commercial settings.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=HI-BAY_LIGHT">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=DUST_SENSOR"><img
+                      class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_dust_sensor.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">DUST PARTICLE MONITOR</h4>
+                    <p class="landing_page_product_description">
+                      Dust particle monitors detect and measure airborne
+                      particulate levels, ensuring air quality and cleanliness
+                      in sensitive environments.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=DUST_SENSOR">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="landingpage_look_into_section_carousel_item">
+                <div class="landingpage_look_into_section_carousel_img_div">
+                  <a href="products_page_web.html?product=AIR_FLOW">
+                    <img class="landingpage_look_into_section_carousel_product_img"
+                      src="../static/img/lookintosection/lookinto_section_air_flow.png" alt="Product 1" /></a>
+                </div>
+                <div class="landingpage_look_into_section_carousel_description_div">
+                  <div>
+                    <h4 class="landing_page_product_title">AIR FLOW MONITOR</h4>
+                    <p class="landing_page_product_description">
+                      Airflow monitors track and measure air movement and
+                      velocity, ensuring proper ventilation and maintaining
+                      optimal air quality in various environments.
+                    </p>
+                  </div>
+                  <a href="products_page_web.html?product=AIR_FLOW">
+                    <div>
+                      <img src="../static/img/arrow_next.svg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+   
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- look into section end -->
+
+    <!-- why trust us start-->
+    <section class="landingpage_whytrustust_section" data-aos="fade-up" data-aos-duration="2000">
+      <div class="landingpage_whytrust_para_img p-4">
+        <div class="landingpage_whytrust_para">
+          <div>
+            <h5 class="landingpage_whytrust_title py-3">WHY TRUST US?</h5>
+            <p class="landingpage_whytrust_para_1">
+              Evoluzn Inc was established in 2012 in Illinois, USA, focusing
+              on wireless broadband devices, including 5G, 4G, and 3G routers.
+              Renowned for producing high-quality, reliable products, Evoluzn
+              Inc leverages cutting-edge technology and innovative engineering
+              to enhance connectivity and user experience.
+            </p>
+
+            <br />
+            <p class="landingpage_whytrust_para_2">
+              In 2019, Evoluzn India Private Limited was founded as a fully
+              owned subsidiary to expand the company's reach in the Internet
+              of Things (IoT) sector. This subsidiary specializes in the
+              Research, Development, and Manufacturing of IoT devices
+              essential for Home, Office, and Industrial automation. The
+              creation of Evoluzn India highlights the company's dedication to
+              driving innovation and offering state-of-the-art solutions to a
+              global market.
+            </p>
+
+            <br />
+            <p class="landingpage_whytrust_para_3">
+              By combining the expertise of both entities, Evoluzn Inc and
+              Evoluzn India aim to provide comprehensive, high-quality
+              technological solutions, continually pushing the boundaries of
+              technology to create a more connected and automated world.
+            </p>
+          </div>
+        </div>
+
+        <div class="landingpage_whytrust_img_div ">
+          <img class="landingpage_whytrust_img" src="../static/img/why_trust_us_img.jpg" />
+        </div>
+      </div>
+    </section>
+    <!-- why trust us stop -->
+
+    <!-- blog start -->
+    <section data-aos="fade-up" data-aos-duration="2000">
+      <div class="landingpage_blog_div">
+        <div class="p-4">
+          <div class="landingpage_blog_main_text">BLOGS</div>
+    
+          <div class="landingpage_blog_scroll1">
+            <div class="pb-4 landingpage_blog_scroll2">
+    
+              <!-- Blog 1 Card -->
+              <a href="blog1_page.html"> <!-- Anchor tag wrapping the entire blog card -->
+                <div class="landingpage_bhehind_board_div p-3">
+                  <div class="landingpage_blog_text_title">
+                    <img class="landingpage_blog1_img" src="..\static\img\Blog1_circle.png" />
+                    <p class="landingpage_blog1_text">
+                      How IoT Automation is Transforming Industrial Operations
+                    </p>
+                  </div>
+                  <div class="landingpage_blogs_para" style="position: relative; bottom: 21px;">
+                    The rapid advancement of Internet of Things (IoT) technology is revolutionizing industrial operations,
+          ushering in a new era of efficiency and innovation...
+                  </div>
+                </div>
+              </a>
+    
+              <!-- Blog 2 Card -->
+              <a href="blog2_page.html">
+                <div class="landingpage_bhehind_board_div p-3">
+                  <div class="landingpage_blog_text_title">
+                    <img class="landingpage_blog1_img" src="..\static\img\Blog2_circle.png" />
+                    <p class="landingpage_blog1_text">
+                      Future of Industrial Automation with IoT & AI
+                    </p>
+                  </div>
+                  <div class="landingpage_blogs_para" style="position: relative; bottom: 21px;">
+                    As the manufacturing sector evolves, the integration of Internet of Things (IoT) and Artificial Intelligence (AI) is setting the stage for a new era of smart, 
+                    automated production. By merging IoT with AI...
+                  </div>
+                </div>
+              </a>
+    
+              <!-- Blog 3 Card -->
+              <a href="blog3_page.html">
+                <div class="landingpage_bhehind_board_div p-3">
+                  <div class="landingpage_blog_text_title">
+                    <img class="landingpage_blog1_img" src="..\static\img\Blog3_circle.png" />
+                    <p class="landingpage_blog1_text">
+                      Top 5 IoT benefits in automation
+                    </p>
+                  </div>
+                  <div class="landingpage_blogs_para" style="position: relative; bottom: 21px;">
+                    The integration of Internet of Things (IoT) solutions in industrial automation is reshaping how industries operate, offering 
+                    transformative benefits that enhance efficiency, safety...
+                  </div>
+                </div>
+              </a>
+    
+              <!-- Blog 4 Card -->
+              <a href="blog4_page.html">
+                <div class="landingpage_bhehind_board_div p-3">
+                  <div class="landingpage_blog_text_title">
+                    <img class="landingpage_blog1_img" src="..\static\img\Blog4_circle.png" />
+                    <p class="landingpage_blog1_text">
+                      Industrial IoT driving Industry 4.0
+                    </p>
+                  </div>
+                  <div class="landingpage_blogs_para" style="position: relative; bottom: 21px;">
+                    The Fourth Industrial Revolution, or Industry 4.0, represents a paradigm shift in manufacturing and industrial processes, 
+                    characterized by the integration of advanced technologies that...
+                  </div>
+                </div>
+              </a>
+    
+              <!-- Blog 5 Card -->
+              <a href="blog5_page.html">
+                <div class="landingpage_bhehind_board_div p-3">
+                  <div class="landingpage_blog_text_title">
+                    <img class="landingpage_blog1_img" src="..\static\img\Blog5_circle.png" />
+                    <p class="landingpage_blog1_text">
+                      Embedded Sensors Boost Safety in Industrial IoT
+                    </p>
+                  </div>
+                  <div class="landingpage_blogs_para" style="position: relative; bottom: 21px;">
+                    In the rapidly advancing realm of Industrial Internet of Things (IIoT), embedded sensors play a crucial role in enhancing safety and security 
+                    within industrial environments. These sensors, ranging from gas...
+                </div>
+              </a>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- blog stop -->
+
+    <!-- what out costumer say start -->
+    <section class="p-4 " data-aos="fade-up" data-aos-duration="2000">
+      <div class="landingpage_ourcostumer row ">
+        <div class="col landingpage_what_our_costumersay_para">
+          <h5 class="landingpage_whatourcostumersay_title">
+            WHAT OUR COSTUMER SAYS
+          </h5>
+
+          <p class="mt-5 landingpage_ourcostumer_para1">
+            Our customers trust us for innovative solutions that consistently
+            enhance efficiency, reliability, and connectivity across diverse
+            industries
+          </p>
+
+          <p class="landingpage_ourcostumer_para1">
+            They've experienced significant improvements in their operations,
+            thanks to our commitment to delivering cutting-edge technology and
+            unmatched expertise.
+          </p>
+
+          <p class="landingpage_ourcostumer_para1">
+            From boosting productivity to ensuring seamless communication, our
+            solutions have been a game-changer, driving success for businesses
+            worldwide.
+          </p>
+
+          <p class="landingpage_ourcostumer_para1">
+            Our dedication to understanding industry challenges allows us to
+            provide tailored solutions that meet and exceed expectations,
+            resulting in long-lasting partnerships.
+          </p>
+
+          <p class="landingpage_ourcostumer_para1">
+            Clients across various sectors have seen remarkable results, with
+            our technology helping them achieve new levels of operational
+            excellence.
+          </p>
+        </div>
+
+        <div class="col">
+          <div>
+            <div class="p-3 landingpage_what_our_costumersay_div">
+              <div class="">
+                <img class="landingpage_ourcostumer_img_1" src="../static/img/wocs1.png" />
+              </div>
+              <div class="">
+                <div>
+                  <h3 class="landing_page_customer_review_title">Viezh Robert</h3>
+                </div>
+                <div>
+                  <p class="landing_page_customer_review_description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation. Lorem ipsum dolor sit amet
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-3 landingpage_what_our_costumersay_div">
+              <div>
+                <img class="landingpage_ourcostumer_img_1" src="../static/img/wocs2.png" />
+              </div>
+              <div>
+                <div>
+                  <h3 class="landing_page_customer_review_title">Viezh Robert</h3>
+                </div>
+                <div>
+                  <p class="landing_page_customer_review_description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation. Lorem ipsum dolor sit amet
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-3 landingpage_what_our_costumersay_div">
+              <div>
+                <img class="landingpage_ourcostumer_img_1" src="../static/img/wocs3.png" />
+              </div>
+              <div>
+                <div>
+                  <h3 class="landing_page_customer_review_title">Viezh Robert</h3>
+                </div>
+                <div>
+                  <p class="landing_page_customer_review_description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation. Lorem ipsum dolor sit amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- what out costumer say end -->
+
+    <!-- footer start -->
+    <section data-aos="fade-up" data-aos-duration="2000">
+      <footer class="footer_div pt-5 pb-2">
+        <div class="landingpage_footermain_main_div">
+          <div class="landingpage_footer_main p-4">
+            <!-- Company Logo and Social Media -->
+            <div class="landingpage_footer_div2">
+              <img class="landingpage_footer_img_logo" src="../static/img/evoluznlogo_white.png">
+              <p class="mt-5 p-3  ">Revolutionize Efficiency Through Cutting-Edge Smart Automation Solutions</p>
+              <div class="landingpage_footer_socialmedia_div">
+                <a><img src="../static/img/Facebook.png"></a>
+                <a><img src="../static/img/Twitter.png"></a>
+                <a><img src="../static/img/Instagram.png"></a>
+                <a><img src="../static/img/LinkedIn.png"></a>
+                <a><img src="../static/img/YouTube.png"></a>
+              </div>
+            </div>
+    
+            <!-- Essential Links -->
+            <div class="landingpage_footer_div2">
+              <h5 class="landingpage_footer_product_title">Product</h5>
+              <div class="py-3 landingpage_footer_product_options">
+                <a class="landingpage_footer_options"><div>Features</div></a>
+                <a class="landingpage_footer_options"><div>Pricing</div></a>
+                <a class="landingpage_footer_options"><div>Case studies</div></a>
+                <a class="landingpage_footer_options"><div>Updates</div></a>
+              </div>
+            </div>
+    
+            <div class="landingpage_footer_div2">
+              <h5 class="landingpage_footer_product_title">Company</h5>
+              <div class="py-3 landingpage_footer_product_options">
+                <a class="landingpage_footer_options"><div>About</div></a>
+                <a class="landingpage_footer_options"><div>Careers</div></a>
+                <a class="landingpage_footer_options"><div>Blog</div></a>
+              </div>
+            </div>
+    
+            <div class="landingpage_footer_div2">
+              <h5 class="landingpage_footer_product_title">Support</h5>
+              <div class="py-3 landingpage_footer_product_options">
+                <a class="landingpage_footer_options"><div>Help center</div></a>
+                <a class="landingpage_footer_options"><div>Chat support</div></a>
+              </div>
+            </div>
+    
+            <!-- Contact Information -->
+            <div class="landingpage_footer_div2">
+              <h5 class="landingpage_footer_product_title">Contact Us</h5>
+              <div class="py-3 landingpage_footer_product_options">
+                <a class="landingpage_footer_options">
+                  <div class="landingpage_footer_contactus_main_div">
+                    <img class="landingpage_footer_contactus_main_div_icon" src="../static/img/Email.png">
+                    <div>sales@evoluzn.in</div>
+                  </div>
+                </a>
+                <a class="landingpage_footer_options">
+                  <div class="landingpage_footer_contactus_main_div">
+                    <img class="landingpage_footer_contactus_main_div_icon" src="../static/img/Phone.png">
+                    <div>+91 9154990641</div>
+                  </div>
+                </a>
+                <a class="landingpage_footer_options">
+                  <div class="landingpage_footer_contactus_main_div">
+                    <img class="landingpage_footer_contactus_main_div_icon2" src="../static/img/location.png">
+                    <div>Block No. 102, First Floor, Pramila Apartment, Khamla Road, Nagpur- 440025, Maharashtra, India</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="px-3">
+          <hr class="landingpage_footer_coptright_line">
+          <div class="landingpage_footer_coptright_line2">
+            <p>Copyright © 2024</p>
+            <p>All Rights Reserved | Terms and Conditions | Privacy Policy</p>
+          </div>
+        </div>
+    
+      </footer>
+    </section>
+    <!-- footer end -->
+
+    <!-- **************************************************************************** -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../static/js/lookintosection.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".nav-link").on("click", function () {
+        $(".nav-link").removeClass("active");
+        $(this).addClass("active");
+      });
+    });
+
+    const videoPlayer = document.getElementById('desktopVideoPlayer');
+    const videoSources = [
+        "../static/img/0000-0865.mp4", // Video for INDUSTRY AUTOMATION
+        "../static/img/0000-0375.mp4", // Video for HOSPITAL AUTOMATION
+        "../static/img/cleanroom.mp4"  // Video for CLEANROOM AUTOMATION
+    ];
+
+    const videoDurations = [36500, 15500, 4000]; // Durations for each video in milliseconds
+
+    let currentVideoIndex = 0; // Track the current video index
+
+    function changeVideo(index) {
+        currentVideoIndex = index; // Update the current video index
+        videoPlayer.src = videoSources[index]; // Set video source based on selection
+        videoPlayer.currentTime = 0; // Reset video time to the beginning
+        videoPlayer.play(); // Start playing the video
+
+        // Play the video for the duration specified in videoDurations array
+        setTimeout(() => {
+            videoPlayer.pause(); // Pause the current video
+            playNextVideo(); // Play the next video in the sequence
+        }, videoDurations[index]); // Use the corresponding duration
+    }
+
+    function playNextVideo() {
+        currentVideoIndex = (currentVideoIndex + 1) % videoSources.length; // Get the next video index
+        videoPlayer.src = videoSources[currentVideoIndex]; // Set the next video source
+        videoPlayer.currentTime = 0; // Reset the video time to the beginning
+        videoPlayer.play(); // Start playing the next video
+
+        // Repeat the process for the duration specified in videoDurations array
+        setTimeout(() => {
+            videoPlayer.pause();
+            playNextVideo(); // Automatically play the following video
+        }, videoDurations[currentVideoIndex]);
+    }
+
+    // Initial video setup when the page loads
+    window.onload = function() {
+        changeVideo(0); // Start playing the first video automatically
+    };
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Info new</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/products_page_web.css">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="../static/img/dark logo.png" height="50" alt="Logo" />
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#lookIntoSection">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about_us_web.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blogs_web.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./get_in_touch_web.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container product-container">
+        <div class="product-box">
+            <div class="product-image">
+                <img id="product_main_img_big" src="../static/images/high_bay_tilted_view.png" alt="Product Image"
+                    class="responsive-image product_main_img_big">
+            </div>
+            <div class="small-boxes" id="products_images_small">
+                <!-- <div class="small-box">
+                    <img src="../static/images/high_bay_BV.png" alt="Icon 1" class="small-box-icon">
+                </div> -->
+            </div>
+        </div>
+        <div class="product-info">
+            <div class="feature">
+                <h1 class="high_accuracy_title" id="product_img_title"></h1>
+                <p id="product_img_description" class="high_accuracy_content"></p>
+            </div>
+
+
+            <div class="feature">
+                <div class="productpage_key_feature_download_specification">
+                    <h4 class="wide_frequency_title">Key Features:</h4>
+                    <!-- <h5 class="wide_frequency_title" style="text-decoration: underline;">Download Specifications:</h5> -->
+                </div>
+                <br>
+                <div class="productpage_key_feature_div">
+                    <div class="productpage_key_feature">
+                        <h5 class="productpage_key_feature_title">Input Voltage</h5>
+                        <div class="productpage_key_feature_description" id="product_img_input_voltage_spec"></div>
+                    </div>
+                    <div class="productpage_key_feature">
+                        <h5 class="productpage_key_feature_title">Network</h5>
+                        <div class="productpage_key_feature_description" id="product_img_network"></div>
+                    </div>
+                    <div class="productpage_key_feature">
+                        <h5 class="productpage_key_feature_title">Input current</h5>
+                        <div class="productpage_key_feature_description" id="product_img_input_current"></div>
+                    </div>
+                    <div class="productpage_key_feature">
+                        <h5 class="productpage_key_feature_title">power wattage</h5>
+                        <div class="productpage_key_feature_description" id="product_img_power_wattage"></div>
+                    </div>
+                </div>
+
+                <div class="btn-container">
+                    <a href="#" class="btn contact-button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../static/js/productspage.js"></script>
+
+</body>
+
+</html>
