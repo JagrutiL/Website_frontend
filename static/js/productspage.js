@@ -21,7 +21,7 @@ function getProductData(product) {
                 
             ]
         },
-        'TUBE_LIGHT': {
+        'TUBE LIGHT': {
             images: [
                 '../static/img/lookintosection/tube_light/tube_light_FV.png',
                 '../static/img/lookintosection/tube_light/tube_light_LV.png',
@@ -36,7 +36,7 @@ function getProductData(product) {
                 '48 W'
             ]
         },
-        'STREET_LIGHT': {
+        'STREET LIGHT': {
             images: [
                 '../static/img/lookintosection/street_light/street_light.png',
                 '../static/img/lookintosection/street_light/street_light_LV.png',
@@ -51,7 +51,7 @@ function getProductData(product) {
                 '58 W'
             ]
         },
-        'SMART_PLUG': {
+        'SMART PLUG': {
             images: [
                 '../static/img/lookintosection/smart_plug/smart_plug_FV.png',
                 '../static/img/lookintosection/smart_plug/smart_plug_LV.png',
@@ -66,7 +66,7 @@ function getProductData(product) {
                 '40W / 60W / 80W'
             ]
         },
-        'SMOKE_DETECTOR': {
+        'SMOKE DETECTOR': {
             images: [
                 '../static/img/lookintosection/smoke_detector/smoke_detector_FV.png',
                 '../static/img/lookintosection/smoke_detector/smoke_detector_LV.png',
@@ -81,7 +81,7 @@ function getProductData(product) {
                 '40W / 60W / 80W'
             ]
         },
-        'OFFICE_LIGHT': {
+        'OFFICE LIGHT': {
             images: [
                 '../static/img/lookintosection/smart_light/cleanroom_tilted_view.png',
                 '../static/img/lookintosection/smart_light/cleanroom_LV.png',
@@ -96,7 +96,7 @@ function getProductData(product) {
                 '40W / 60W / 80W'
             ]
         },
-        'FLOOD_LIGHT': {
+        'FLOOD LIGHT': {
             images: [
                 '../static/img/lookintosection/flood_light/flood_FV.png',
                 '../static/img/lookintosection/flood_light/flood_LS.png',
@@ -111,7 +111,7 @@ function getProductData(product) {
                 '40W / 60W / 80W'
             ]
         },
-        'MULTI_CONTROL_PANEL': {
+        'MULTI CONTROL PANEL': {
             images: [
                 '../static/img/lookintosection/multi_machine_controller/Multi_machine_controller_FV.png',
                 '../static/img/lookintosection/multi_machine_controller/Multi_machine_controller_RV.png',
@@ -126,7 +126,7 @@ function getProductData(product) {
                 '40W / 60W / 80W'
             ]
         },
-        'HI-BAY_LIGHT': {
+        'HI-BAY LIGHT': {
             images: [
                 '../static/img/lookintosection/hi-bay_light/high_bay_FV.png',
                 '../static/img/lookintosection/hi-bay_light/high_bay_LS.png',
@@ -141,7 +141,7 @@ function getProductData(product) {
                 '40W / 60W / 80W'
             ]
         },
-        'DUST_SENSOR': {
+        'DUST SENSOR': {
             images: [
                 '../static/img/lookintosection/dust_particle_monitor/dust_particle_monitor_FV.png',
                 '../static/img/lookintosection/dust_particle_monitor/dust_particle_monitor_LV.png',
@@ -156,7 +156,7 @@ function getProductData(product) {
                 '40W / 60W / 80W'
             ]
         },
-        'AIR_FLOW': {
+        'AIR FLOW': {
             images: [
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_FV.png',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
@@ -172,7 +172,7 @@ function getProductData(product) {
             ]
         },
 
-        'SMART_METER': {
+        'SMART METER': {
             images: [
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_FV.png',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
@@ -188,15 +188,15 @@ function getProductData(product) {
             ]
         },
 
-        'Air_&_Water_Shower': {
+        'AIR WATER SHOWER': {
             images: [
-                '../static/img/lookintosection/cleanroom_automation/Air_&_Water_Shower.jpg',
+                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
             ],
             content: [
-                'Airflow monitors track and measure air movement and velocity, ensuring proper ventilation and maintaining optimal air quality in various environments.',
+                'Efficient decontamination units using air and water jets to remove particles before cleanroom entry, ensuring hygiene and safety',
                 '180 Vac to 265 Vac , 50/60 Hz',
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
@@ -204,15 +204,79 @@ function getProductData(product) {
             ]
         },
 
-        'air_conditioning_systems': {
+        'AIR CONDITIONING SYSTEM': {
             images: [
-                '../static/img/lookintosection/cleanroom_automation/air_conditioning_systems.jpg',
+                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
             ],
             content: [
-                'Airflow monitors track and measure air movement and velocity, ensuring proper ventilation and maintaining optimal air quality in various environments.',
+                'Designed to maintain precise temperature, humidity, and air quality, our air conditioning systems ensure a stable and contaminant-free environment for cleanroom operations, enhancing efficiency and safety',
+                '180 Vac to 265 Vac , 50/60 Hz',
+                'Ethernet',
+                '0.22A / 0.33A / 0.44A',
+                '40W / 60W / 80W'
+            ]
+        },
+
+        'FUME CUPBOARD': {
+            images: [
+                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+            ],
+            content: [
+                'Engineered for safety, our fume cupboards effectively remove hazardous fumes and vapors, providing a secure and controlled environment for cleanroom procedures.',
+                '180 Vac to 265 Vac , 50/60 Hz',
+                'Ethernet',
+                '0.22A / 0.33A / 0.44A',
+                '40W / 60W / 80W'
+            ]
+        },
+
+        'LAMINAR WORK STATION': {
+            images: [
+                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+            ],
+            content: [
+                'Designed for particle-free environments, our laminar workstations provide unidirectional airflow, ensuring a sterile workspace for critical cleanroom tasks.',
+                '180 Vac to 265 Vac , 50/60 Hz',
+                'Ethernet',
+                '0.22A / 0.33A / 0.44A',
+                '40W / 60W / 80W'
+            ]
+        },
+
+        'MODULAR SANDWITCH PANEL': {
+            images: [
+                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+            ],
+            content: [
+                'Durable, insulated panels offering superior thermal control and seamless integration, ideal for creating efficient and sterile cleanroom environments.',
+                '180 Vac to 265 Vac , 50/60 Hz',
+                'Ethernet',
+                '0.22A / 0.33A / 0.44A',
+                '40W / 60W / 80W'
+            ]
+        },
+
+        'NITROGEN STORAGE CABINET': {
+            images: [
+                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+            ],
+            content: [
+                'Provides an inert, controlled environment to safely store sensitive materials, preventing oxidation and contamination in cleanroom settings.',
                 '180 Vac to 265 Vac , 50/60 Hz',
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
@@ -221,32 +285,33 @@ function getProductData(product) {
         },
 
         
-        'Fume_Cupboard': {
+        'PASS BOX': {
             images: [
-                '../static/img/lookintosection/cleanroom_automation/Fume_Cupboard.jpg',
+                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
             ],
             content: [
-                'Airflow monitors track and measure air movement and velocity, ensuring proper ventilation and maintaining optimal air quality in various environments.',
+                'Facilitates safe and contamination-free transfer of materials between cleanroom areas, ensuring minimal disruption to the controlled environment.',
                 '180 Vac to 265 Vac , 50/60 Hz',
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
                 '40W / 60W / 80W'
             ]
         },
+
 
         
-        'air_conditioning_systems': {
+        'SAMPLING BOOTH': {
             images: [
-                '../static/img/lookintosection/cleanroom_automation/Air_&_Water_Shower.jpg',
+                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
             ],
             content: [
-                'Airflow monitors track and measure air movement and velocity, ensuring proper ventilation and maintaining optimal air quality in various environments.',
+                'Ensures a controlled, contamination-free environment for safe and accurate material sampling in cleanroom operations.',
                 '180 Vac to 265 Vac , 50/60 Hz',
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
@@ -255,7 +320,9 @@ function getProductData(product) {
         },
 
 
-        'CONTROL_PANEL': {
+     
+
+        'CONTROL PANEL': {
             images: [
                 '../static/img/lookintosection/control_panal/control_panal_FV.png',
                 '../static/img/lookintosection/control_panal/control_panal_LV.png',
@@ -278,7 +345,7 @@ window.onload = function () {
     const product = getQueryParam('product');
 
     if (product) {
-        document.getElementById('product_img_title').innerText = product.replace('_', ' ');
+        document.getElementById('product_img_title').innerText = product.replace(' ', ' ');
 
         const data = getProductData(product);
         const images = data.images || [];
