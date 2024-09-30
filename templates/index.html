@@ -15,19 +15,160 @@
     @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
   </style>
 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Initial styles for buttons */
+    .video-button {
+      background-color: transparent;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      color: white;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      border: none;
+    }
+
+    .video-button:focus {
+      outline: none;
+    }
+
+    /* Style for the active button */
+    .video-button.active {
+      color: #ffc107;
+    }
+
+    .landingpage_video_parent_div {
+      height: 100vh;
+      width: 300px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      padding-top: 20px;
+      z-index: 1000;
+      gap: 30px;
+    }
+
+    .landingpage_video_parent_div button {
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.15);
+      width: 305px;
+
+    }
+
+    .landingpage_video_parent_div button:hover {
+      color: #ffc107;
+    }
+
+    .video_small_dot_button {
+      display: none;
+      position: relative;
+      bottom: 50px;
+
+    }
+
+    .carousal_option2_video {
+      background-color: rgb(168, 164, 164);
+      width: 150px;
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+      height: 40px;
+      align-items: center;
+    }
+
+    .carousal_option2_video button {
+      font-size: 30px;
+    }
+
+    .landingpage_video_child_div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .landing_page_main_video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-top: 70px;
+      position: relative;
+      top: 5px;
+      object-position: center center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .videoCarousel123 {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      object-position: center center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .rrrrr {
+      margin-top: 60px;
+    }
+
+
+    @media (max-width: 768px) {
+      .landingpage_video_parent_div {
+        display: none;
+      }
+
+      .video_small_dot_button {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+      }
+
+      .rrrrr {
+        margin-top: 0px;
+        position: relative;
+        top: 50px;
+      }
+
+      .ttt {
+        position: relative;
+        bottom: 3px;
+      }
+    }
+  </style>
+
 
 </head>
 
 <body>
+
   <section>
-    <img class="landingpage_hero_main_img" src="../static/img/Rectangle 23785.png" />
+    <img loading="lazy" class="landingpage_hero_main_img" src="../static/img/Rectangle 23785.png" />
   </section>
   <div>
     <!-- navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <a class="navbar-brand" href="index.html">
-        <img src="../static/img/dark logo.png" height="50" alt="Logo" />
+        <img loading="lazy" src="../static/img/dark logo.png" height="50" alt="Logo" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,77 +196,47 @@
     </nav>
     <!-- navbar -->
 
-    <div class="container-fluid p-0">
-      <!-- Video Player for Desktop -->
-      <div id="desktopVideo" class="video-container">
-        <!-- Navbar Links for Desktop -->
-        <div class="navbar-horizontal">
-          <a href="#" onclick="changeVideo(0)"><img src="../static/img/technology 1.png" alt="" /> INDUSTRY
-            AUTOMATION</a>
-          <a href="#" onclick="changeVideo(1)"><img src="../static/img/technology 2.png" alt="" /> HOSPITAL
-            AUTOMATION</a>
-          <a href="#" onclick="changeVideo(2)"><img src="../static/img/technology 4.png" alt="" /> CLEANROOM
-            AUTOMATION</a>
+    <section class="rrrrr">
+      <!-- Main video buttons -->
+      <div class="landingpage_video_parent_div ">
+        <div class="landingpage_video_child_div">
+          <button class="video-button " data-index="0"><img loading="lazy" src="../static/img/technology 1.png" alt="" />
+            INDUSTRY
+            AUTOMATION</button>
+          <button class="video-button " data-index="1"><img loading="lazy" src="../static/img/technology 2.png" alt="" />
+            HOSPITAL
+            AUTOMATION</button>
+          <button class="video-button " data-index="2"><img loading="lazy" src="../static/img/technology 4.png" alt="" />
+            CLEANROOM AUTOMATION</button>
         </div>
-        <video class="video-player" id="desktopVideoPlayer" autoplay muted loop>
+      </div>
+
+      <!-- Video carousel -->
+      <div class="videoCarousel123" id="videoCarousel">
+        <video id="video1 landing_page_main_video" class="video-player" loading="lazy" autoplay muted>
           <source src="../static/img/0000-0865.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video id="video2 landing_page_main_video" class="video-player" loading="lazy" muted style="display: none;">
+          <source src="../static/img/0000-0375.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video id="video3 landing_page_main_video" class="video-player" loading="lazy" muted style="display: none;">
+          <source src="../static/img/cleanroom.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
-      <!-- Video Carousel for Mobile -->
-      <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- Carousel Indicators (Dots) -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Video 1"></button>
-          <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1" aria-label="Video 2"></button>
-          <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="2" aria-label="Video 3"></button>
-          <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="3" aria-label="Video 4"></button>
+      <!-- Small mobile buttons -->
+      <div class="video_small_dot_button video_small_dot_button">
+        <div class="carousal_option2_video">
+          <button class="video-button ttt" data-index="0">•</button>
+          <button class="video-button ttt" data-index="1">•</button>
+          <button class="video-button ttt" data-index="2">•</button>
         </div>
-
-        <!-- Carousel Inner (Videos) -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="video-container">
-              <video class="video-player" autoplay muted loop>
-                <source src="../static/img/0000-0865.mp4" type="video/mp4" />
-
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="video-container">
-              <video class="video-player" autoplay muted loop>
-                <source src="../static/img/cleanroom.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="video-container">
-              <video class="video-player" autoplay muted loop>
-                <source src="../static/img/0000-0375.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carousel Controls (Previous and Next) -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
+    </section>
 
-    <!-- look into section start -->
     <!-- look into section start -->
     <section id="lookIntoSection" data-aos="fade-up" data-aos-duration="2000">
 
@@ -182,7 +293,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=THDP">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_THDP.png" alt="Product 1" /></a>
                 </div>
                 <div class="landingpage_look_into_section_carousel_description_div">
@@ -196,7 +307,7 @@
                   </div>
                   <a href="products_page_web.html?product=THDP"></a>
                   <div>
-                    <img src="../static/img/arrow_next.svg" />
+                    <img loading="lazy" src="../static/img/arrow_next.svg" />
                   </div>
 
                 </div>
@@ -206,7 +317,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=TUBE LIGHT">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_tube_light.png" alt="Product 1" /></a>
                 </div>
                 <div class="landingpage_look_into_section_carousel_description_div">
@@ -221,7 +332,7 @@
                   </div>
                   <a href="products_page_web.html?product=TUBE LIGHT">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -230,7 +341,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=STREET LIGHT">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_street_light.png" alt="Product 1" /></a>
                 </div>
                 <div class="landingpage_look_into_section_carousel_description_div">
@@ -244,7 +355,7 @@
                   </div>
                   <a href="products_page_web.html?product=STREET LIGHT">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -252,7 +363,7 @@
 
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=SMART PLUG"><img
+                  <a href="products_page_web.html?product=SMART PLUG"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_smart_plug.png" alt="Product 1" /></a>
                 </div>
@@ -268,7 +379,7 @@
                   </div>
                   <a href="products_page_web.html?product=SMART PLUG">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -276,7 +387,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=SMOKE DETECTOR">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_smoke_detector.png" alt="Product 1" /></a>
                 </div>
                 <div class="landingpage_look_into_section_carousel_description_div">
@@ -291,14 +402,14 @@
                   </div>
                   <a href="products_page_web.html?product=SMOKE DETECTOR">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
               </div>
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=OFFICE LIGHT"><img
+                  <a href="products_page_web.html?product=OFFICE LIGHT"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_clean_room_light.png" alt="Product 1" /></a>
                 </div>
@@ -314,14 +425,14 @@
                   </div>
                   <a href="products_page_web.html?product=OFFICE LIGHT">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
               </div>
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=FLOOD LIGHT"><img
+                  <a href="products_page_web.html?product=FLOOD LIGHT"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_flood_light.png" alt="Product 1" /></a>
                 </div>
@@ -336,14 +447,14 @@
                   </div>
                   <a href="products_page_web.html?product=FLOOD LIGHT">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
               </div>
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=MULTI CONTROL PANEL"><img
+                  <a href="products_page_web.html?product=MULTI CONTROL PANEL"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_control_panel.png" alt="Product 1" /></a>
                 </div>
@@ -359,7 +470,7 @@
                   </div>
                   <a href="products_page_web.html?product=MULTI CONTROL PANEL">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -367,7 +478,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=HI-BAY LIGHT">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_highbay_light.png" alt="Product 1" />
                   </a>
                 </div>
@@ -383,14 +494,14 @@
                   </div>
                   <a href="products_page_web.html?product=HI-BAY LIGHT">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
               </div>
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=DUST SENSOR"><img
+                  <a href="products_page_web.html?product=DUST SENSOR"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_dust_sensor.png" alt="Product 1" /></a>
                 </div>
@@ -405,7 +516,7 @@
                   </div>
                   <a href="products_page_web.html?product=DUST SENSOR">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -413,7 +524,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=AIR FLOW">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_air_flow.png" alt="Product 1" /></a>
                 </div>
                 <div class="landingpage_look_into_section_carousel_description_div">
@@ -427,14 +538,14 @@
                   </div>
                   <a href="products_page_web.html?product=AIR FLOW">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
               </div>
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=CONTROL PANEL"><img
+                  <a href="products_page_web.html?product=CONTROL PANEL"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_control_panels.png" alt="Product 1" /></a>
                 </div>
@@ -450,15 +561,15 @@
                   </div>
                   <a href="products_page_web.html?product=CONTROL PANEL">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
               </div>
-              <!-- Add more carousel items if needed --> 
+              <!-- Add more carousel items if needed -->
             </div>
           </div>
-           
+
           <!-- Product 2 -->
           <div class="landingpage_multiple_product_carousal_container landingpage_multiple_product_carousal"
             id="product2">
@@ -474,7 +585,7 @@
             </div>
             <div class="landingpage_look_into_section_carousel_item">
               <div class="landingpage_look_into_section_carousel_img_div">
-                <a href="products_page_web.html?product=SMART METER"><img
+                <a href="products_page_web.html?product=SMART METER"><img loading="lazy"
                     class="landingpage_look_into_section_carousel_product_img"
                     src="../static/img/lookintosection/lookinto_section_control_panels.png" alt="Product 1" /></a>
               </div>
@@ -490,7 +601,7 @@
                 </div>
                 <a href="products_page_web.html?product=SMART METER">
                   <div>
-                    <img src="../static/img/arrow_next.svg" />
+                    <img loading="lazy" src="../static/img/arrow_next.svg" />
                   </div>
                 </a>
               </div>
@@ -516,7 +627,7 @@
               <!-- Carousel items -->
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=AIR WATER SHOWER"><img
+                  <a href="products_page_web.html?product=AIR WATER SHOWER"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg"
                       alt="Product 1" /></a>
@@ -531,7 +642,7 @@
                   </div>
                   <a href="products_page_web.html?product=AIR WATER SHOWER">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -539,7 +650,7 @@
               <!-- Add more carousel items if needed -->
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=AIR CONDITIONING SYSTEM"><img
+                  <a href="products_page_web.html?product=AIR CONDITIONING SYSTEM"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/cleanroom_section/lookinto_section_air_conditioning_system.png"
                       alt="Product 1" /></a>
@@ -555,7 +666,7 @@
                   </div>
                   <a href="products_page_web.html?product=AIR CONDITIONING SYSTEM">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -563,7 +674,7 @@
 
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=FUME CUPBOARD"><img
+                  <a href="products_page_web.html?product=FUME CUPBOARD"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/cleanroom_section/lookinto_section_Fume_Cupboard.png" alt="Product 1" /></a>
                 </div>
@@ -577,7 +688,7 @@
                   </div>
                   <a href="products_page_web.html?product=FUME CUPBOARD">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -585,7 +696,7 @@
 
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=LAMINAR WORK STATION"><img
+                  <a href="products_page_web.html?product=LAMINAR WORK STATION"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/cleanroom_section/lookinto_section_laminar_work_station.png"
                       alt="Product 1" /></a>
@@ -600,7 +711,7 @@
                   </div>
                   <a href="products_page_web.html?product=LAMINAR WORK STATION">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -609,7 +720,7 @@
 
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=MODULAR SANDWITCH PANEL"><img
+                  <a href="products_page_web.html?product=MODULAR SANDWITCH PANEL"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/cleanroom_section/lookinto_section_modular_sandwitch_panels.jpg"
                       alt="Product 1" /></a>
@@ -624,7 +735,7 @@
                   </div>
                   <a href="products_page_web.html?product=MODULAR SANDWITCH PANEL">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -632,7 +743,7 @@
 
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=NITROGEN STORAGE CABINET"><img
+                  <a href="products_page_web.html?product=NITROGEN STORAGE CABINET"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/cleanroom_section/lookinto_section_nitrogen_storage_cabinate.jpg"
                       alt="Product 1" /></a>
@@ -647,7 +758,7 @@
                   </div>
                   <a href="products_page_web.html?product=NITROGEN STORAGE CABINET">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -655,7 +766,7 @@
 
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=PASS BOX"><img
+                  <a href="products_page_web.html?product=PASS BOX"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/cleanroom_section/lookinto_section_Pass_box.jpg" alt="Product 1" /></a>
                 </div>
@@ -669,7 +780,7 @@
                   </div>
                   <a href="products_page_web.html?product=PASS BOX">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -677,7 +788,7 @@
 
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=SAMPLING BOOTH"><img
+                  <a href="products_page_web.html?product=SAMPLING BOOTH"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/cleanroom_section/lookinto_section_sampling-booth.jpg" alt="Product 1" /></a>
                 </div>
@@ -691,7 +802,7 @@
                   </div>
                   <a href="products_page_web.html?product=SAMPLING BOOTH">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -720,7 +831,7 @@
 
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=CONTROL PANEL"><img
+                  <a href="products_page_web.html?product=CONTROL PANEL"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_control_panels.png" alt="Product 1" /></a>
                 </div>
@@ -736,14 +847,14 @@
                   </div>
                   <a href="products_page_web.html?product=CONTROL PANEL">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
               </div>
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=SMART PLUG"><img
+                  <a href="products_page_web.html?product=SMART PLUG"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_smart_plug.png" alt="Product 1" /></a>
                 </div>
@@ -759,7 +870,7 @@
                   </div>
                   <a href="products_page_web.html?product=SMART PLUG">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -767,7 +878,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=TUBE LIGHT">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_tube_light.png" alt="Product 1" /></a>
                 </div>
                 <div class="landingpage_look_into_section_carousel_description_div">
@@ -782,7 +893,7 @@
                   </div>
                   <a href="products_page_web.html?product=TUBE LIGHT">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -791,7 +902,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=STREET LIGHT">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_street_light.png" alt="Product 1" /></a>
                 </div>
                 <div class="landingpage_look_into_section_carousel_description_div">
@@ -805,7 +916,7 @@
                   </div>
                   <a href="products_page_web.html?product=STREET LIGHT">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -813,7 +924,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=THDP">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_THDP.png" alt="Product 1" /></a>
                 </div>
                 <div class="landingpage_look_into_section_carousel_description_div">
@@ -827,7 +938,7 @@
                   </div>
                   <a href="products_page_web.html?product=THDP"></a>
                   <div>
-                    <img src="../static/img/arrow_next.svg" />
+                    <img loading="lazy" src="../static/img/arrow_next.svg" />
                   </div>
 
                 </div>
@@ -836,7 +947,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=SMOKE DETECTOR">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_smoke_detector.png" alt="Product 1" /></a>
                 </div>
                 <div class="landingpage_look_into_section_carousel_description_div">
@@ -851,14 +962,14 @@
                   </div>
                   <a href="products_page_web.html?product=SMOKE DETECTOR">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
               </div>
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=OFFICE LIGHT"><img
+                  <a href="products_page_web.html?product=OFFICE LIGHT"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_clean_room_light.png" alt="Product 1" /></a>
                 </div>
@@ -874,14 +985,14 @@
                   </div>
                   <a href="products_page_web.html?product=OFFICE LIGHT">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
               </div>
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=FLOOD LIGHT"><img
+                  <a href="products_page_web.html?product=FLOOD LIGHT"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_flood_light.png" alt="Product 1" /></a>
                 </div>
@@ -896,14 +1007,14 @@
                   </div>
                   <a href="products_page_web.html?product=FLOOD LIGHT">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
               </div>
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=MULTI CONTROL PANEL"><img
+                  <a href="products_page_web.html?product=MULTI CONTROL PANEL"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_control_panel.png" alt="Product 1" /></a>
                 </div>
@@ -919,7 +1030,7 @@
                   </div>
                   <a href="products_page_web.html?product=MULTI CONTROL PANEL">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -927,7 +1038,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=HI-BAY LIGHT">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_highbay_light.png" alt="Product 1" />
                   </a>
                 </div>
@@ -943,14 +1054,14 @@
                   </div>
                   <a href="products_page_web.html?product=HI-BAY LIGHT">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
               </div>
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
-                  <a href="products_page_web.html?product=DUST SENSOR"><img
+                  <a href="products_page_web.html?product=DUST SENSOR"><img loading="lazy"
                       class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_dust_sensor.png" alt="Product 1" /></a>
                 </div>
@@ -965,7 +1076,7 @@
                   </div>
                   <a href="products_page_web.html?product=DUST SENSOR">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -973,7 +1084,7 @@
               <div class="landingpage_look_into_section_carousel_item">
                 <div class="landingpage_look_into_section_carousel_img_div">
                   <a href="products_page_web.html?product=AIR FLOW">
-                    <img class="landingpage_look_into_section_carousel_product_img"
+                    <img loading="lazy" class="landingpage_look_into_section_carousel_product_img"
                       src="../static/img/lookintosection/lookinto_section_air_flow.png" alt="Product 1" /></a>
                 </div>
                 <div class="landingpage_look_into_section_carousel_description_div">
@@ -987,7 +1098,7 @@
                   </div>
                   <a href="products_page_web.html?product=AIR FLOW">
                     <div>
-                      <img src="../static/img/arrow_next.svg" />
+                      <img loading="lazy" src="../static/img/arrow_next.svg" />
                     </div>
                   </a>
                 </div>
@@ -1037,7 +1148,7 @@
         </div>
 
         <div class="landingpage_whytrust_img_div ">
-          <img class="landingpage_whytrust_img" src="../static/img/why_trust_us_img.jpg" />
+          <img loading="lazy" class="landingpage_whytrust_img" src="../static/img/why_trust_us_img.jpg" />
         </div>
       </div>
     </section>
@@ -1056,7 +1167,7 @@
               <a href="blog1_page.html"> <!-- Anchor tag wrapping the entire blog card -->
                 <div class="landingpage_bhehind_board_div p-3">
                   <div class="landingpage_blog_text_title">
-                    <img class="landingpage_blog1_img" src="..\static\img\Blog1_circle.png" />
+                    <img loading="lazy" class="landingpage_blog1_img" src="..\static\img\Blog1_circle.png" />
                     <p class="landingpage_blog1_text">
                       How IoT Automation is Transforming Industrial Operations
                     </p>
@@ -1074,7 +1185,7 @@
               <a href="blog2_page.html">
                 <div class="landingpage_bhehind_board_div p-3">
                   <div class="landingpage_blog_text_title">
-                    <img class="landingpage_blog1_img" src="..\static\img\Blog2_circle.png" />
+                    <img loading="lazy" class="landingpage_blog1_img" src="..\static\img\Blog2_circle.png" />
                     <p class="landingpage_blog1_text">
                       Future of Industrial Automation with IoT & AI
                     </p>
@@ -1091,7 +1202,7 @@
               <a href="blog3_page.html">
                 <div class="landingpage_bhehind_board_div p-3">
                   <div class="landingpage_blog_text_title">
-                    <img class="landingpage_blog1_img" src="..\static\img\Blog3_circle.png" />
+                    <img loading="lazy" class="landingpage_blog1_img" src="..\static\img\Blog3_circle.png" />
                     <p class="landingpage_blog1_text">
                       Top 5 IoT benefits in automation
                     </p>
@@ -1108,7 +1219,7 @@
               <a href="blog4_page.html">
                 <div class="landingpage_bhehind_board_div p-3">
                   <div class="landingpage_blog_text_title">
-                    <img class="landingpage_blog1_img" src="..\static\img\Blog4_circle.png" />
+                    <img loading="lazy" class="landingpage_blog1_img" src="..\static\img\Blog4_circle.png" />
                     <p class="landingpage_blog1_text">
                       Industrial IoT driving Industry 4.0
                     </p>
@@ -1125,7 +1236,7 @@
               <a href="blog5_page.html">
                 <div class="landingpage_bhehind_board_div p-3">
                   <div class="landingpage_blog_text_title">
-                    <img class="landingpage_blog1_img" src="..\static\img\Blog5_circle.png" />
+                    <img loading="lazy" class="landingpage_blog1_img" src="..\static\img\Blog5_circle.png" />
                     <p class="landingpage_blog1_text">
                       Embedded Sensors Boost Safety in Industrial IoT
                     </p>
@@ -1188,7 +1299,7 @@
           <div>
             <div class="p-3 landingpage_what_our_costumersay_div">
               <div class="">
-                <img class="landingpage_ourcostumer_img_1" src="../static/img/wocs1.png" />
+                <img loading="lazy" class="landingpage_ourcostumer_img_1" src="../static/img/wocs1.png" />
               </div>
               <div class="">
                 <!-- <div>
@@ -1206,7 +1317,7 @@
 
             <div class="p-3 landingpage_what_our_costumersay_div">
               <div>
-                <img class="landingpage_ourcostumer_img_1" src="../static/img/wocs2.png" />
+                <img loading="lazy" class="landingpage_ourcostumer_img_1" src="../static/img/wocs2.png" />
               </div>
               <div>
                 <!-- <div>
@@ -1224,7 +1335,7 @@
 
             <div class="p-3 landingpage_what_our_costumersay_div">
               <div>
-                <img class="landingpage_ourcostumer_img_1" src="../static/img/wocs2.png" />
+                <img loading="lazy" class="landingpage_ourcostumer_img_1" src="../static/img/wocs2.png" />
               </div>
               <div>
                 <!-- <div>
@@ -1253,7 +1364,7 @@
         <div class="row">
           <div class="col-md-2">
             <div class="landingpage_footer_div2">
-              <a href="index.html"><img class="landingpage_footer_img_logo" src="../static/img/evoluznlogo_white.png"
+              <a href="index.html"><img loading="lazy" class="landingpage_footer_img_logo" src="../static/img/evoluznlogo_white.png"
                   alt="Evoluzn Logo"></a>
               <div class="landingpage_footer_div2">
                 <p class="mt-reduced landingpage_footer_description">
@@ -1264,19 +1375,19 @@
               </div>
               <div class="landingpage_footer_socialmedia_div">
                 <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
-                  <img src="../static/img/Facebook.png" alt="Facebook">
+                  <img loading="lazy" src="../static/img/Facebook.png" alt="Facebook">
                 </a>
                 <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
-                  <img src="../static/img/Twitter.png" alt="Twitter">
+                  <img loading="lazy" src="../static/img/Twitter.png" alt="Twitter">
                 </a>
                 <a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">
-                  <img src="../static/img/Instagram.png" alt="Instagram">
+                  <img loading="lazy" src="../static/img/Instagram.png" alt="Instagram">
                 </a>
                 <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-                  <img src="../static/img/LinkedIn.png" alt="LinkedIn">
+                  <img loading="lazy" src="../static/img/LinkedIn.png" alt="LinkedIn">
                 </a>
                 <a href="https://www.youtube.com/channel/yourchannel" target="_blank" rel="noopener noreferrer">
-                  <img src="../static/img/YouTube.png" alt="YouTube">
+                  <img loading="lazy" src="../static/img/YouTube.png" alt="YouTube">
                 </a>
               </div>
             </div>
@@ -1333,7 +1444,7 @@
               <div class="py-3 landingpage_footer_product_options">
                 <a class="landingpage_footer_options">
                   <div class="landingpage_footer_contactus_main_div">
-                    <img class="landingpage_footer_contactus_icon" src="../static/img/Email.png" alt="Email">
+                    <img loading="lazy" class="landingpage_footer_contactus_icon" src="../static/img/Email.png" alt="Email">
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@evoluzn.in"
                       style="color: inherit; text-decoration: none;" target="_blank">
                       <div>sales@evoluzn.in</div>
@@ -1342,13 +1453,13 @@
                 </a>
                 <a class="landingpage_footer_options">
                   <div class="landingpage_footer_contactus_main_div">
-                    <img class="landingpage_footer_contactus_icon" src="../static/img/Phone.png" alt="Phone">
+                    <img loading="lazy" class="landingpage_footer_contactus_icon" src="../static/img/Phone.png" alt="Phone">
                     <div>+91 9154990641</div>
                   </div>
                 </a>
                 <a class="landingpage_footer_options">
                   <div class="landingpage_footer_contactus_main_div">
-                    <img class="landingpage_footer_contactus_icon" src="../static/img/location.png" alt="Location">
+                    <img loading="lazy" class="landingpage_footer_contactus_icon" src="../static/img/location.png" alt="Location">
                     <div>Block No. 102 First Floor Pramila Apartment, <br>Plot no.15, Khamla Road Above Khamla
                       Automobiles, <br>Nagpur- 440025, Maharashtra, India.</div>
                   </div>
@@ -1388,47 +1499,63 @@
         });
       });
 
-      const videoPlayer = document.getElementById('desktopVideoPlayer');
-      const videoSources = [
-        "../static/img/0000-0865.mp4", // Video for INDUSTRY AUTOMATION
-        "../static/img/0000-0375.mp4", // Video for HOSPITAL AUTOMATION
-        "../static/img/cleanroom.mp4"  // Video for CLEANROOM AUTOMATION
-      ];
+    </script>
+    <script>
+      const videos = document.querySelectorAll('#videoCarousel video');
+      const allButtons = document.querySelectorAll('.video-button'); // Select both sets of buttons
+      let currentVideoIndex = 0;
 
-      const videoDurations = [36500, 15500, 4000]; // Durations for each video in milliseconds
+      // Show the first video and mark the first button as active
+      videos[currentVideoIndex].style.display = 'block';
+      videos[currentVideoIndex].play();
+      updateActiveButtons(currentVideoIndex);
 
-      let currentVideoIndex = 0; // Track the current video index
+      // Function to update the active state for both button sets
+      function updateActiveButtons(index) {
+        allButtons.forEach(button => {
+          // Remove 'active' class from all buttons
+          button.classList.remove('active');
+        });
+        // Add 'active' class to the buttons corresponding to the current video
+        allButtons.forEach(button => {
+          if (button.getAttribute('data-index') == index) {
+            button.classList.add('active');
+          }
+        });
+      }
 
+      // Function to change the video
       function changeVideo(index) {
-        currentVideoIndex = index; // Update the current video index
-        videoPlayer.src = videoSources[index]; // Set video source based on selection
-        videoPlayer.currentTime = 0; // Reset video time to the beginning
-        videoPlayer.play(); // Start playing the video
+        // Pause and hide all videos
+        videos.forEach(video => {
+          video.pause();
+          video.style.display = 'none';
+        });
 
-        // Play the video for the duration specified in videoDurations array
-        setTimeout(() => {
-          videoPlayer.pause(); // Pause the current video
-          playNextVideo(); // Play the next video in the sequence
-        }, videoDurations[index]); // Use the corresponding duration
+        // Show and play the selected video
+        currentVideoIndex = index;
+        videos[currentVideoIndex].style.display = 'block';
+        videos[currentVideoIndex].currentTime = 0;
+        videos[currentVideoIndex].play();
+
+        // Update the buttons' active state
+        updateActiveButtons(currentVideoIndex);
       }
 
-      function playNextVideo() {
-        currentVideoIndex = (currentVideoIndex + 1) % videoSources.length; // Get the next video index
-        videoPlayer.src = videoSources[currentVideoIndex]; // Set the next video source
-        videoPlayer.currentTime = 0; // Reset the video time to the beginning
-        videoPlayer.play(); // Start playing the next video
+      // Event listener for buttons to change videos
+      allButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const index = button.getAttribute('data-index');
+          changeVideo(index);
+        });
+      });
 
-        // Repeat the process for the duration specified in videoDurations array
-        setTimeout(() => {
-          videoPlayer.pause();
-          playNextVideo(); // Automatically play the following video
-        }, videoDurations[currentVideoIndex]);
-      }
-
-      // Initial video setup when the page loads
-      window.onload = function () {
-        changeVideo(0); // Start playing the first video automatically
-      };
+      // Play the next video when the current one ends
+      videos.forEach((video, index) => {
+        video.addEventListener('ended', () => {
+          changeVideo((currentVideoIndex + 1) % videos.length);
+        });
+      });
     </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
