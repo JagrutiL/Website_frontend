@@ -23,10 +23,10 @@ function getProductData(product) {
         },
         'TUBE LIGHT': {
             images: [
-                '../static/img/lookintosection/tube_light/tube_light_FV.png',
-                '../static/img/lookintosection/tube_light/tube_light_LV.png',
-                '../static/img/lookintosection/tube_light/tube_light_RV.png',
-                '../static/img/lookintosection/tube_light/tube_light_BV.png'
+                '../static/img/lookintosection/tube_light/tube-light-FV.png',
+                '../static/img/lookintosection/tube_light/tube-light_sensor.png',
+                '../static/img/lookintosection/tube_light/tube-light_RV.png',
+                '../static/img/lookintosection/tube_light/tube-light_BV.png'
             ],
             content: [
                 'Tube lights provide bright, even illumination for various spaces, offering energy efficiency and a sleek design suitable for both commercial and residential environments.',
@@ -38,7 +38,7 @@ function getProductData(product) {
         },
         'STREET LIGHT': {
             images: [
-                '../static/img/lookintosection/street_light/street_light.png',
+                '../static/img/lookintosection/street_light/street_light_square_FV.png',
                 '../static/img/lookintosection/street_light/street_light_LV.png',
                 '../static/img/lookintosection/street_light/street_light_RV.png',
                 '../static/img/lookintosection/street_light/street_light_BV.png',
