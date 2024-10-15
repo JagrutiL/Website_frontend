@@ -39,9 +39,9 @@ function getProductData(product) {
         'STREET LIGHT': {
             images: [
                 '../static/img/lookintosection/street_light/street_light_square_FV.png',
-                '../static/img/lookintosection/street_light/street_light_LV.png',
-                '../static/img/lookintosection/street_light/street_light_RV.png',
-                '../static/img/lookintosection/street_light/street_light_BV.png',
+                '../static/img/lookintosection/street_light/street_light_square_TV.png',
+                '../static/img/lookintosection/street_light/street_light_square_BV.png',
+                '../static/img/lookintosection/street_light/street_light_square_BACK_VIEW.png',
             ],
             content: [
                 'Street lights provide reliable, wide-area illumination for roadways and public spaces, ensuring safety and visibility during nighttime and low-light conditions.',
@@ -128,10 +128,10 @@ function getProductData(product) {
         },
         'HI-BAY LIGHT': {
             images: [
-                '../static/img/lookintosection/hi-bay_light/high_bay_FV.png',
-                '../static/img/lookintosection/hi-bay_light/high_bay_LS.png',
-                '../static/img/lookintosection/hi-bay_light/high_bay_RS.png',
-                '../static/img/lookintosection/hi-bay_light/high_bay_BV.png',
+                '../static/img/lookintosection/hi-bay_light/high-bay-light_view.png',
+                '../static/img/lookintosection/hi-bay_light/hi-bay_light_front_view.png',
+                '../static/img/lookintosection/hi-bay_light/high-bay-top_view.png',
+                '../static/img/lookintosection/hi-bay_light/hi-bay_light_back_view.png',
             ],
             content: [
                 'High-bay lights deliver intense, wide-ranging illumination for large spaces, offering consistent brightness and energy efficiency in industrial and commercial settings.',
@@ -143,10 +143,10 @@ function getProductData(product) {
         },
         'DUST SENSOR': {
             images: [
-                '../static/img/lookintosection/dust_particle_monitor/dust_particle_monitor_FV.png',
-                '../static/img/lookintosection/dust_particle_monitor/dust_particle_monitor_LV.png',
-                '../static/img/lookintosection/dust_particle_monitor/dust_particle_monitor_RV.png',
-                '../static/img/lookintosection/dust_particle_monitor/dust_particle_monitor_BV.png',
+                '../static/img/lookintosection/dust_particle_monitor/DP_T.png',
+                '../static/img/lookintosection/dust_particle_monitor/DP_B.png',
+                '../static/img/lookintosection/dust_particle_monitor/DP_I.png',
+                '../static/img/lookintosection/dust_particle_monitor/DP_R.png',
             ],
             content: [
                 'Dust particle monitors detect and measure airborne particulate levels, ensuring air quality and cleanliness in sensitive environments.',
@@ -174,10 +174,10 @@ function getProductData(product) {
 
         'SMART METER': {
             images: [
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_FV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+                '../static/img/lookintosection/smart-meter/smart_meter_FV.png',
+                '../static/img/lookintosection/smart-meter/smart_meter_SV.png',
+                '../static/img/lookintosection/smart-meter/smart_meter_TV.png',
+                '../static/img/lookintosection/smart-meter/smart_meter_BV.png',
             ],
             content: [
                 'Airflow monitors track and measure air movement and velocity, ensuring proper ventilation and maintaining optimal air quality in various environments.',
@@ -190,10 +190,10 @@ function getProductData(product) {
 
         'AIR WATER SHOWER': {
             images: [
-                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+                '../static/img/lookintosection/cleanroom_automation/air water showers/1.png',
+                '../static/img/lookintosection/cleanroom_automation/air water showers/2.png',
+                '../static/img/lookintosection/cleanroom_automation/air water showers/3.png',
+                '../static/img/lookintosection/cleanroom_automation/air water showers/1.png',
             ],
             content: [
                 'Efficient decontamination units using air and water jets to remove particles before cleanroom entry, ensuring hygiene and safety',
@@ -206,10 +206,10 @@ function getProductData(product) {
 
         'AIR CONDITIONING SYSTEM': {
             images: [
-                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+                '../static/img/lookintosection/cleanroom_automation/air_conditioning_systems.jpg',
+                '../static/img/lookintosection/cleanroom_automation/air condition systems/1.jpg',
+                '../static/img/lookintosection/cleanroom_automation/air condition systems/2.jpg',
+                '../static/img/lookintosection/cleanroom_automation/air condition systems/3.jpg',
             ],
             content: [
                 'Designed to maintain precise temperature, humidity, and air quality, our air conditioning systems ensure a stable and contaminant-free environment for cleanroom operations, enhancing efficiency and safety',
@@ -222,10 +222,10 @@ function getProductData(product) {
 
         'FUME CUPBOARD': {
             images: [
-                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+                '../static/img/lookintosection/cleanroom_automation/Fume_Cupboard.jpg',
+                '../static/img/lookintosection/cleanroom_automation/fume cupboard/2.jpg',
+                '../static/img/lookintosection/cleanroom_automation/fume cupboard/3.png',
+                '../static/img/lookintosection/cleanroom_automation/fume cupboard/product.full.jpg',
             ],
             content: [
                 'Engineered for safety, our fume cupboards effectively remove hazardous fumes and vapors, providing a secure and controlled environment for cleanroom procedures.',
@@ -238,10 +238,10 @@ function getProductData(product) {
 
         'LAMINAR WORK STATION': {
             images: [
-                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+                '../static/img/lookintosection/cleanroom_automation/Laminar_work_station.jpg',
+                '../static/img/lookintosection/cleanroom_automation/laminar work station/4.png',
+                '../static/img/lookintosection/cleanroom_automation/laminar work station/2.png',
+                '../static/img/lookintosection/cleanroom_automation/laminar work station/1.png',
             ],
             content: [
                 'Designed for particle-free environments, our laminar workstations provide unidirectional airflow, ensuring a sterile workspace for critical cleanroom tasks.',
@@ -254,10 +254,10 @@ function getProductData(product) {
 
         'MODULAR SANDWITCH PANEL': {
             images: [
-                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+                '../static/img/lookintosection/cleanroom_automation/modular_sandwitch_panels.jpg',
+                '../static/img/lookintosection/cleanroom_automation/sandwitch panels/1.jpg',
+                '../static/img/lookintosection/cleanroom_automation/sandwitch panels/3.jpg',
+                '../static/img/lookintosection/cleanroom_automation/sandwitch panels/1.jpg',
             ],
             content: [
                 'Durable, insulated panels offering superior thermal control and seamless integration, ideal for creating efficient and sterile cleanroom environments.',
@@ -270,10 +270,10 @@ function getProductData(product) {
 
         'NITROGEN STORAGE CABINET': {
             images: [
-                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+                '../static/img/lookintosection/cleanroom_automation/nitrogen_storage_cabinate.jpg',
+                '../static/img/lookintosection/cleanroom_automation/nitrogen storage cabinet/1.png',
+                '../static/img/lookintosection/cleanroom_automation/nitrogen storage cabinet/2.png',
+                '../static/img/lookintosection/cleanroom_automation/nitrogen storage cabinet/3.png',
             ],
             content: [
                 'Provides an inert, controlled environment to safely store sensitive materials, preventing oxidation and contamination in cleanroom settings.',
@@ -287,10 +287,10 @@ function getProductData(product) {
         
         'PASS BOX': {
             images: [
-                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+                '../static/img/lookintosection/cleanroom_automation/Pass_box.jpg',
+                '../static/img/lookintosection/cleanroom_automation/pass box/1.png',
+                '../static/img/lookintosection/cleanroom_automation/pass box/2.png',
+                '../static/img/lookintosection/cleanroom_automation/pass box/3.png',
             ],
             content: [
                 'Facilitates safe and contamination-free transfer of materials between cleanroom areas, ensuring minimal disruption to the controlled environment.',
@@ -305,10 +305,10 @@ function getProductData(product) {
         
         'SAMPLING BOOTH': {
             images: [
-                '../static/img/cleanroom_section/lookinto_section_Air_&_Water_Shower.jpg',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
+                '../static/img/lookintosection/cleanroom_automation/sampling-booth.jpg',
+                '../static/img/lookintosection/cleanroom_automation/sampling booth/1.png',
+                '../static/img/lookintosection/cleanroom_automation/sampling booth/2.png',
+                '../static/img/lookintosection/cleanroom_automation/sampling booth/3.png',
             ],
             content: [
                 'Ensures a controlled, contamination-free environment for safe and accurate material sampling in cleanroom operations.',
