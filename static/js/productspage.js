@@ -19,6 +19,12 @@ function getProductData(product) {
                 '0.22A / 0.33A / 0.44A',
                 '40W / 60W / 80W'
                 
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         },
         'TUBE LIGHT': {
@@ -34,6 +40,12 @@ function getProductData(product) {
                 'Ethernet',
                 '0.2 A',
                 '48 W'
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         },
         'STREET LIGHT': {
@@ -49,6 +61,12 @@ function getProductData(product) {
                 'LORA   Network with Ethernet',
                 '0.2 A',
                 '58 W'
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         },
         'SMART PLUG': {
@@ -64,6 +82,12 @@ function getProductData(product) {
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
                 '40W / 60W / 80W'
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         },
         'SMOKE DETECTOR': {
@@ -79,6 +103,12 @@ function getProductData(product) {
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
                 '40W / 60W / 80W'
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         },
         'OFFICE LIGHT': {
@@ -94,6 +124,12 @@ function getProductData(product) {
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
                 '40W / 60W / 80W'
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         },
         'FLOOD LIGHT': {
@@ -109,6 +145,12 @@ function getProductData(product) {
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
                 '40W / 60W / 80W'
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         },
         'MULTI CONTROL PANEL': {
@@ -124,6 +166,12 @@ function getProductData(product) {
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
                 '40W / 60W / 80W'
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         },
         'HI-BAY LIGHT': {
@@ -139,21 +187,33 @@ function getProductData(product) {
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
                 '40W / 60W / 80W'
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         },
         'DUST SENSOR': {
             images: [
-                '../static/img/lookintosection/dust_particle_monitor/DP_T.png',
-                '../static/img/lookintosection/dust_particle_monitor/DP_B.png',
-                '../static/img/lookintosection/dust_particle_monitor/DP_I.png',
-                '../static/img/lookintosection/dust_particle_monitor/DP_R.png',
+                '../static/img/lookintosection/dust_particle_monitor/DP_F (1).png',
+                '../static/img/lookintosection/dust_particle_monitor/DP_B (2).png',
+                '../static/img/lookintosection/dust_particle_monitor/DP_S (1).png',
+                '../static/img/lookintosection/dust_particle_monitor/DP_T (2).png',
             ],
             content: [
                 'Dust particle monitors detect and measure airborne particulate levels, ensuring air quality and cleanliness in sensitive environments.',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                '9VDC',
+                '≥1000 µg/m³',
+                '0.3–1.0 µm; 1.0–2.5 µm; 2.5–10 µm',
+                '1 µg/m³'
+            ],
+            titles: [
+                'Voltage Range', 
+                'PM2.5 Maximum Range', 
+                'Measurement Range', 
+                'Sensor Resolution'
             ]
         },
         'AIR FLOW': {
@@ -169,13 +229,19 @@ function getProductData(product) {
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
                 '40W / 60W / 80W'
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         },
 
         'SMART METER': {
             images: [
-                '../static/img/lookintosection/smart-meter/smart_meter_FV.png',
-                '../static/img/lookintosection/smart-meter/smart_meter_SV.png',
+                '../static/img/lookintosection/smart-meter/1 (1).png',
+                '../static/img/lookintosection/smart-meter/2 (1).png',
                 '../static/img/lookintosection/smart-meter/smart_meter_TV.png',
                 '../static/img/lookintosection/smart-meter/smart_meter_BV.png',
             ],
@@ -185,6 +251,12 @@ function getProductData(product) {
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
                 '40W / 60W / 80W'
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         },
 
@@ -197,10 +269,16 @@ function getProductData(product) {
             ],
             content: [
                 'Efficient decontamination units using air and water jets to remove particles before cleanroom entry, ensuring hygiene and safety',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                'Air-water jets clean surfaces.',
+                'Sensors trigger operation.',
+                'Clean air for drying.',
+                'Adjustable settings.'
+            ],
+            titles: [
+                'Particle Removal', 
+                'Auto Activation', 
+                'HEPA Air Jets', 
+                'Custom Cycles'
             ]
         },
 
@@ -213,10 +291,16 @@ function getProductData(product) {
             ],
             content: [
                 'Designed to maintain precise temperature, humidity, and air quality, our air conditioning systems ensure a stable and contaminant-free environment for cleanroom operations, enhancing efficiency and safety',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+             'Maintains stable temperature and humidity.',
+                'Optimizes air quality with HEPA filtration.',
+                'Reduces energy consumption effectively.',
+                'Remote control and alerts for easy monitoring.'
+            ],
+            titles: [
+                'Precision Control',
+                'HEPA Filtration',
+                'Energy Efficiency',
+                'Remote Monitoring'
             ]
         },
 
@@ -229,10 +313,16 @@ function getProductData(product) {
             ],
             content: [
                 'Engineered for safety, our fume cupboards effectively remove hazardous fumes and vapors, providing a secure and controlled environment for cleanroom procedures.',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                'Removes toxic fumes and chemicals effectively.',
+                'Sensors automate airflow control.',
+                'HEPA filtration ensures clean exhaust.',
+                'Offers adjustable airflow settings.'
+            ],
+            titles: [
+                'Fume Extraction',
+                'Auto Airflow Control',
+                'HEPA Filtration',
+                'Adjustable Settings'
             ]
         },
 
@@ -245,10 +335,16 @@ function getProductData(product) {
             ],
             content: [
                 'Designed for particle-free environments, our laminar workstations provide unidirectional airflow, ensuring a sterile workspace for critical cleanroom tasks.',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                'Provides clean, particle-free airflow.',
+                'HEPA filters maintain contamination control.',
+                'Ensures uniform airflow across the workstation.',
+                'Easy control via touch panel.'
+            ],
+            titles: [
+                'Particle-Free Air',
+                'HEPA Filtration',
+                'Uniform Airflow',
+                'Touch Panel Control'
             ]
         },
 
@@ -261,10 +357,16 @@ function getProductData(product) {
             ],
             content: [
                 'Durable, insulated panels offering superior thermal control and seamless integration, ideal for creating efficient and sterile cleanroom environments.',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                'Insulated panels ensure temperature control.',
+                'Quick assembly with modular design.',
+                'Durable and easy to clean surfaces.',
+                'Compliant with cleanroom standards.'
+            ],
+            titles: [
+                'Temperature Control',
+                'Modular Design',
+                'Easy Maintenance',
+                'Standards Compliance'
             ]
         },
 
@@ -277,10 +379,16 @@ function getProductData(product) {
             ],
             content: [
                 'Provides an inert, controlled environment to safely store sensitive materials, preventing oxidation and contamination in cleanroom settings.',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                'Stores sensitive items under nitrogen atmosphere.',
+                'Prevents oxidation and moisture exposure.',
+                'Automated nitrogen purging system.',
+                'Monitors internal environment in real-time.'
+            ],
+            titles: [
+                'Controlled Storage',
+                'Oxidation Prevention',
+                'Automated Purging',
+                'Real-Time Monitoring'
             ]
         },
 
@@ -294,10 +402,16 @@ function getProductData(product) {
             ],
             content: [
                 'Facilitates safe and contamination-free transfer of materials between cleanroom areas, ensuring minimal disruption to the controlled environment.',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                'Facilitates material transfer between cleanrooms.',
+                'Interlocking doors prevent cross-contamination.',
+                'Equipped with UV sterilization.',
+                'Customizable sizes and configurations.'
+            ],
+            titles: [
+                'Material Transfer',
+                'Interlocking System',
+                'UV Sterilization',
+                'Customizable Design'
             ]
         },
 
@@ -312,13 +426,19 @@ function getProductData(product) {
             ],
             content: [
                 'Ensures a controlled, contamination-free environment for safe and accurate material sampling in cleanroom operations.',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+            'Ensures contamination-free sampling.',
+                'HEPA filters provide clean airflow.',
+                'Designed with ergonomic workspace.',
+                'Compliant with industry standards.'
+            ],
+            titles: [
+                'Contamination-Free Sampling',
+                'HEPA Airflow',
+                'Ergonomic Design',
+                'Standards Compliance'
             ]
         },
-
+ 
 
      
 
@@ -331,10 +451,16 @@ function getProductData(product) {
             ],
             content: [
                 'Control panels provide centralized management and monitoring of various systems, offering intuitive interfaces for operating, configuring, and controlling equipment and processes.',
-              '180 Vac to 265 Vac , 50/60 Hz',
+                '180 Vac to 265 Vac , 50/60 Hz',
                 'Ethernet',
                 '0.22A / 0.33A / 0.44A',
                 '40W / 60W / 80W'
+            ],
+            titles: [
+                'Voltage Range', 
+                'Network Interface', 
+                'Current Draw', 
+                'Power Consumption'
             ]
         }
     };
@@ -343,19 +469,20 @@ function getProductData(product) {
 
 window.onload = function () {
     const product = getQueryParam('product');
-
+    
     if (product) {
         document.getElementById('product_img_title').innerText = product.replace(' ', ' ');
 
         const data = getProductData(product);
         const images = data.images || [];
         const content = data.content || [];
+        const titles = data.titles || []; // New: Titles data
 
         const mainImageContainer = document.getElementById('product_main_img_big');
         const productImagesContainer = document.getElementById('products_images_small');
 
+        // Update the main product image and thumbnails
         if (images.length > 0) {
-            // Set the main image dynamically
             mainImageContainer.src = images[0];
 
             images.slice(1).forEach(src => {
@@ -365,7 +492,6 @@ window.onload = function () {
                 const imgElement = document.createElement('img');
                 imgElement.src = src;
 
-                // Add click event to swap images
                 imgElement.addEventListener('click', function () {
                     const tempSrc = mainImageContainer.src;
                     mainImageContainer.src = this.src;
@@ -378,14 +504,34 @@ window.onload = function () {
         }
 
         // Add the content divs based on the product
-        const contentDivIds = ['product_img_description', 'product_img_input_voltage_spec', 'product_img_network', 'product_img_input_current', 'product_img_power_wattage', 'product_img_power_wattage1', 'product_img_power_wattage2', 'product_img_power_wattage3', 'product_img_power_wattage4'];
+        const contentDivIds = [
+            'product_img_description', 
+            'product_img_input_voltage_spec', 
+            'product_img_network', 
+            'product_img_input_current', 
+            'product_img_power_wattage'
+        ];
+
         contentDivIds.forEach((id, index) => {
             const div = document.getElementById(id);
             if (div && content[index]) {
                 div.innerText = content[index];
             }
         });
-    } else {
-        console.error('No product parameter found in the URL.');
+
+        // Update the feature titles dynamically
+        const titleIds = [
+            'title_input_voltage', 
+            'title_network', 
+            'title_input_current', 
+            'title_power_wattage'
+        ];
+
+        titleIds.forEach((id, index) => {
+            const titleElement = document.getElementById(id);
+            if (titleElement && titles[index]) {
+                titleElement.innerText = titles[index];
+            }
+        });
     }
-}
+};
