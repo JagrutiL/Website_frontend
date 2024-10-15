@@ -15,145 +15,6 @@
     @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
   </style>
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Initial styles for buttons */
-    .video-button {
-      background-color: transparent;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      color: white;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 10px;
-      border: none;
-    }
-
-    .video-button:focus {
-      outline: none;
-    }
-
-    /* Style for the active button */
-    .video-button.active {
-      color: #ffc107;
-    }
-
-    .landingpage_video_parent_div {
-      height: 100vh;
-      width: 300px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: left;
-      justify-content: center;
-      padding-top: 20px;
-      z-index: 1000;
-      gap: 30px;
-    }
-
-    .landingpage_video_parent_div button {
-      text-decoration: none;
-      font-weight: bold;
-      padding: 10px 15px;
-      border-radius: 5px;
-      background-color: rgba(0, 0, 0, 0.15);
-      width: 305px;
-
-    }
-
-    .landingpage_video_parent_div button:hover {
-      color: #ffc107;
-    }
-
-    .video_small_dot_button {
-      display: none;
-      position: relative;
-      bottom: 50px;
-
-    }
-
-    .carousal_option2_video {
-      background-color: rgb(168, 164, 164);
-      width: 150px;
-      display: flex;
-      justify-content: center;
-      border-radius: 20px;
-      height: 40px;
-      align-items: center;
-    }
-
-    .carousal_option2_video button {
-      font-size: 30px;
-    }
-
-    .landingpage_video_child_div {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .landing_page_main_video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      margin-top: 70px;
-      position: relative;
-      top: 5px;
-      object-position: center center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-    }
-
-    .videoCarousel123 {
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-      object-position: center center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .rrrrr {
-      margin-top: 60px;
-    }
-
-
-    @media (max-width: 768px) {
-      .landingpage_video_parent_div {
-        display: none;
-      }
-
-      .video_small_dot_button {
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-
-      }
-
-      .rrrrr {
-        margin-top: 0px;
-        position: relative;
-        top: 50px;
-      }
-
-      .ttt {
-        position: relative;
-        bottom: 3px;
-      }
-    }
-  </style>
 
 
 </head>
@@ -200,13 +61,16 @@
       <!-- Main video buttons -->
       <div class="landingpage_video_parent_div ">
         <div class="landingpage_video_child_div">
-          <button class="video-button " data-index="0"><img loading="lazy" src="../static/img/technology 1.png" alt="" />
+          <button class="video-button " data-index="0"><img loading="lazy" src="../static/img/technology 1.png"
+              alt="" />
             INDUSTRY
             AUTOMATION</button>
-          <button class="video-button " data-index="1"><img loading="lazy" src="../static/img/technology 2.png" alt="" />
+          <button class="video-button " data-index="1"><img loading="lazy" src="../static/img/technology 2.png"
+              alt="" />
             HOSPITAL
             AUTOMATION</button>
-          <button class="video-button " data-index="2"><img loading="lazy" src="../static/img/technology 4.png" alt="" />
+          <button class="video-button " data-index="2"><img loading="lazy" src="../static/img/technology 4.png"
+              alt="" />
             CLEANROOM AUTOMATION</button>
         </div>
       </div>
@@ -214,7 +78,7 @@
       <!-- Video carousel -->
       <div class="videoCarousel123" id="videoCarousel">
         <video id="video1 landing_page_main_video" class="video-player" loading="lazy" autoplay muted>
-          <source src="../static/img/0000-0865.mp4" type="video/mp4" />
+          <source src="../static/img/0000-0979.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <video id="video2 landing_page_main_video" class="video-player" loading="lazy" muted style="display: none;">
@@ -1364,8 +1228,8 @@
         <div class="row">
           <div class="col-md-2">
             <div class="landingpage_footer_div2">
-              <a href="index.html"><img loading="lazy" class="landingpage_footer_img_logo" src="../static/img/evoluznlogo_white.png"
-                  alt="Evoluzn Logo"></a>
+              <a href="index.html"><img loading="lazy" class="landingpage_footer_img_logo"
+                  src="../static/img/evoluznlogo_white.png" alt="Evoluzn Logo"></a>
               <div class="landingpage_footer_div2">
                 <p class="mt-reduced landingpage_footer_description">
                   <span class="headline-bold">&#x2713; EVOLVE the Existing</span><br>
@@ -1374,16 +1238,16 @@
                 </p>
               </div>
               <div class="landingpage_footer_socialmedia_div">
-                <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/profile.php?id=100064628276057&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                   <img loading="lazy" src="../static/img/Facebook.png" alt="Facebook">
                 </a>
-                <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
+                <!-- <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
                   <img loading="lazy" src="../static/img/Twitter.png" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">
+                </a> -->
+                <a href="https://www.instagram.com/evoluznindia?igsh=bGQwdTQ5NjhocGJi" target="_blank" rel="noopener noreferrer">
                   <img loading="lazy" src="../static/img/Instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/evoluzn-india-pvt-ltd/" target="_blank" rel="noopener noreferrer">
                   <img loading="lazy" src="../static/img/LinkedIn.png" alt="LinkedIn">
                 </a>
                 <a href="https://www.youtube.com/channel/yourchannel" target="_blank" rel="noopener noreferrer">
@@ -1397,12 +1261,12 @@
             <div class="landingpage_footer_div2">
               <h5 class="landingpage_footer_product_title">Product</h5>
               <div class="py-3 landingpage_footer_product_options">
-                <a class="landingpage_footer_options">
+                <a class="landingpage_footer_options" href="index.html#lookIntoSection">
                   <div>Features</div>
                 </a>
-                <a class="landingpage_footer_options">
+                <!-- <a class="landingpage_footer_options"  >
                   <div>Reviews</div>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -1444,7 +1308,8 @@
               <div class="py-3 landingpage_footer_product_options">
                 <a class="landingpage_footer_options">
                   <div class="landingpage_footer_contactus_main_div">
-                    <img loading="lazy" class="landingpage_footer_contactus_icon" src="../static/img/Email.png" alt="Email">
+                    <img loading="lazy" class="landingpage_footer_contactus_icon" src="../static/img/Email.png"
+                      alt="Email">
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@evoluzn.in"
                       style="color: inherit; text-decoration: none;" target="_blank">
                       <div>sales@evoluzn.in</div>
@@ -1453,17 +1318,26 @@
                 </a>
                 <a class="landingpage_footer_options">
                   <div class="landingpage_footer_contactus_main_div">
-                    <img loading="lazy" class="landingpage_footer_contactus_icon" src="../static/img/Phone.png" alt="Phone">
+                    <img loading="lazy" class="landingpage_footer_contactus_icon" src="../static/img/Phone.png"
+                      alt="Phone">
                     <div>+91 9154990641</div>
                   </div>
                 </a>
-                <a class="landingpage_footer_options">
-                  <div class="landingpage_footer_contactus_main_div">
-                    <img loading="lazy" class="landingpage_footer_contactus_icon" src="../static/img/location.png" alt="Location">
-                    <div>Block No. 102 First Floor Pramila Apartment, <br>Plot no.15, Khamla Road Above Khamla
-                      Automobiles, <br>Nagpur- 440025, Maharashtra, India.</div>
-                  </div>
-                </a>
+                <a class="landingpage_footer_options" 
+                href="https://maps.app.goo.gl/GgGMzK5JLzvPZV82A" 
+                target="_blank" 
+                rel="noopener noreferrer">
+               <div class="landingpage_footer_contactus_main_div">
+                 <img loading="lazy" class="landingpage_footer_contactus_icon" 
+                      src="../static/img/location.png" alt="Location">
+                 <div>
+                   Block No. 102 First Floor Pramila Apartment, <br>
+                   Plot no.15, Khamla Road Above Khamla Automobiles, <br>
+                   Nagpur- 440025, Maharashtra, India.
+                 </div>
+               </div>
+             </a>
+             
               </div>
             </div>
 

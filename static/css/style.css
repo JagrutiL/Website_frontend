@@ -1397,3 +1397,145 @@ body {
   background-color: white;
   /* Ensure visibility */
 }
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Initial styles for buttons */
+.video-button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+
+.video-button:focus {
+  outline: none;
+}
+
+/* Style for the active button */
+.video-button.active {
+  color: #ffc107;
+}
+
+.landingpage_video_parent_div {
+  height: 100vh;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-top: 20px;
+  z-index: 1000;
+  gap: 30px;
+}
+
+.landingpage_video_parent_div button {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 305px;
+
+}
+
+.landingpage_video_parent_div button:hover {
+  color: #ffc107;
+}
+
+.video_small_dot_button {
+  display: none;
+  position: relative;
+  bottom: 50px;
+
+}
+
+.carousal_option2_video {
+  background-color: rgb(168, 164, 164);
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  height: 40px;
+  align-items: center;
+}
+
+.carousal_option2_video button {
+  font-size: 30px;
+}
+
+.landingpage_video_child_div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.landing_page_main_video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 70px;
+  position: relative;
+  top: 5px;
+  object-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.videoCarousel123 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  object-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rrrrr {
+  margin-top: 60px;
+}
+
+
+@media (max-width: 768px) {
+  .landingpage_video_parent_div {
+    display: none;
+  }
+
+  .video_small_dot_button {
+    display: block;
+    display: flex;   
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  .rrrrr {
+    margin-top: 0px;
+    position: relative;
+    top: 50px;
+  }
+
+  .ttt {
+    position: relative;
+    bottom: 3px; 
+  }
+  .videoCarousel123{
+    height: 90vh;                      
+  } 
+}
