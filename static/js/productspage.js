@@ -142,9 +142,9 @@ function getProductData(product) {
             content: [
                 'Flood lights deliver intense, broad-spectrum illumination for expansive areas, enhancing visibility and security in outdoor and large-scale indoor settings.',
                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                'LORA Network with Ethernet',
+                '0.2 A',
+                '58 W'
             ],
             titles: [
                 'Voltage Range', 
@@ -219,8 +219,8 @@ function getProductData(product) {
         'AIR FLOW': {
             images: [
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_FV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV.png',
-                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV.png',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_RV (1).png',
+                '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_LV (1).png',
                 '../static/img/lookintosection/air_flow_monitor/air_flow_monitor_BV.png',
             ],
             content: [
@@ -242,15 +242,15 @@ function getProductData(product) {
             images: [
                 '../static/img/lookintosection/smart-meter/1 (1).png',
                 '../static/img/lookintosection/smart-meter/2 (1).png',
-                '../static/img/lookintosection/smart-meter/smart_meter_TV.png',
-                '../static/img/lookintosection/smart-meter/smart_meter_BV.png',
+                '../static/img/lookintosection/smart-meter/samrt_meter_SV.png',
+                '../static/img/lookintosection/smart-meter/samrt_meter_T.png',
             ],
             content: [
                 'Airflow monitors track and measure air movement and velocity, ensuring proper ventilation and maintaining optimal air quality in various environments.',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                '415 Va , 3 Phase , 50/60 Hz ',
+                '4G LTE Cellular Network',
+                '0.02A',
+                '4.8 W'
             ],
             titles: [
                 'Voltage Range', 
@@ -451,10 +451,10 @@ function getProductData(product) {
             ],
             content: [
                 'Control panels provide centralized management and monitoring of various systems, offering intuitive interfaces for operating, configuring, and controlling equipment and processes.',
-                '180 Vac to 265 Vac , 50/60 Hz',
+                '415 Va , 3 Phase , 50/60 Hz ',
                 'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                '0.02A',
+                '4.8 W'
             ],
             titles: [
                 'Voltage Range', 
