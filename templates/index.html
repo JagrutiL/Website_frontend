@@ -16,7 +16,6 @@
   </style>
 
 
-
 </head>
 
 <body>
@@ -57,7 +56,7 @@
     </nav>
     <!-- navbar -->
 
-    <section class="rrrrr">
+    <section class=" dashboard_video_main_section">
       <!-- Main video buttons -->
       <div class="landingpage_video_parent_div ">
         <div class="landingpage_video_child_div">
@@ -74,37 +73,25 @@
             CLEANROOM AUTOMATION</button>
         </div>
       </div>
-
-      <!-- Video carousel -->
       <div class="videoCarousel123" id="videoCarousel">
-        <video id="video1 landing_page_main_video" class="video-player" loading="lazy" autoplay muted>
-          <source src="../static/img/0000-0979.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video id="video2 landing_page_main_video" class="video-player" loading="lazy" muted style="display: none;">
-          <source src="../static/img/0000-0375.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video id="video3 landing_page_main_video" class="video-player" loading="lazy" muted style="display: none;">
-          <source src="../static/img/cleanroom.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <video id="mainVideo" class="video-player" autoplay muted preload="auto"></video>
       </div>
 
       <!-- Small mobile buttons -->
       <div class="video_small_dot_button video_small_dot_button">
         <div class="carousal_option2_video">
-          <button class="video-button ttt" data-index="0">•</button>
-          <button class="video-button ttt" data-index="1">•</button>
-          <button class="video-button ttt" data-index="2">•</button>
+          <button class="video-button video_button_dott" data-index="0">•</button>
+          <button class="video-button video_button_dott" data-index="1">•</button>
+          <button class="video-button video_button_dott" data-index="2">•</button>
         </div>
       </div>
     </section>
 
     <!-- look into section start -->
-    <section id="lookIntoSection" data-aos="fade-up" data-aos-duration="2000">
+    <section id="lookIntoSection">
 
       <div class="multiple_carousal_div">
+
         <div class="p-4">
           <h4 class="landingpage_lookintosection pb-2">LOOK INTO SECTION</h4>
 
@@ -169,11 +156,11 @@
                       cleanroom conditions and contamination prevention.
                     </p>
                   </div>
-                  <a href="products_page_web.html?product=THDP"></a>
+                  <a href="products_page_web.html?product=THDP">
                   <div>
                     <img loading="lazy" src="../static/img/arrow_next.svg" />
                   </div>
-
+                </a>
                 </div>
               </div>
               <!-- Carousel items -->
@@ -1238,16 +1225,19 @@
                 </p>
               </div>
               <div class="landingpage_footer_socialmedia_div">
-                <a href="https://www.facebook.com/profile.php?id=100064628276057&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/profile.php?id=100064628276057&mibextid=ZbWKwL" target="_blank"
+                  rel="noopener noreferrer">
                   <img loading="lazy" src="../static/img/Facebook.png" alt="Facebook">
                 </a>
                 <!-- <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
                   <img loading="lazy" src="../static/img/Twitter.png" alt="Twitter">
                 </a> -->
-                <a href="https://www.instagram.com/evoluznindia?igsh=bGQwdTQ5NjhocGJi" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/evoluznindia?igsh=bGQwdTQ5NjhocGJi" target="_blank"
+                  rel="noopener noreferrer">
                   <img loading="lazy" src="../static/img/Instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.linkedin.com/company/evoluzn-india-pvt-ltd/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/evoluzn-india-pvt-ltd/" target="_blank"
+                  rel="noopener noreferrer">
                   <img loading="lazy" src="../static/img/LinkedIn.png" alt="LinkedIn">
                 </a>
                 <a href="https://www.youtube.com/channel/yourchannel" target="_blank" rel="noopener noreferrer">
@@ -1323,21 +1313,19 @@
                     <div>+91 9154990641</div>
                   </div>
                 </a>
-                <a class="landingpage_footer_options" 
-                href="https://maps.app.goo.gl/GgGMzK5JLzvPZV82A" 
-                target="_blank" 
-                rel="noopener noreferrer">
-               <div class="landingpage_footer_contactus_main_div">
-                 <img loading="lazy" class="landingpage_footer_contactus_icon" 
-                      src="../static/img/location.png" alt="Location">
-                 <div>
-                   Block No. 102 First Floor Pramila Apartment, <br>
-                   Plot no.15, Khamla Road Above Khamla Automobiles, <br>
-                   Nagpur- 440025, Maharashtra, India.
-                 </div>
-               </div>
-             </a>
-             
+                <a class="landingpage_footer_options" href="https://maps.app.goo.gl/GgGMzK5JLzvPZV82A" target="_blank"
+                  rel="noopener noreferrer">
+                  <div class="landingpage_footer_contactus_main_div">
+                    <img loading="lazy" class="landingpage_footer_contactus_icon" src="../static/img/location.png"
+                      alt="Location">
+                    <div>
+                      Block No. 102 First Floor Pramila Apartment, <br>
+                      Plot no.15, Khamla Road Above Khamla Automobiles, <br>
+                      Nagpur- 440025, Maharashtra, India.
+                    </div>
+                  </div>
+                </a>
+
               </div>
             </div>
 
@@ -1365,74 +1353,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../static/js/lookintosection.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        $(".nav-link").on("click", function () {
-          $(".nav-link").removeClass("active");
-          $(this).addClass("active");
-        });
-      });
 
-    </script>
-    <script>
-      const videos = document.querySelectorAll('#videoCarousel video');
-      const allButtons = document.querySelectorAll('.video-button'); // Select both sets of buttons
-      let currentVideoIndex = 0;
-
-      // Show the first video and mark the first button as active
-      videos[currentVideoIndex].style.display = 'block';
-      videos[currentVideoIndex].play();
-      updateActiveButtons(currentVideoIndex);
-
-      // Function to update the active state for both button sets
-      function updateActiveButtons(index) {
-        allButtons.forEach(button => {
-          // Remove 'active' class from all buttons
-          button.classList.remove('active');
-        });
-        // Add 'active' class to the buttons corresponding to the current video
-        allButtons.forEach(button => {
-          if (button.getAttribute('data-index') == index) {
-            button.classList.add('active');
-          }
-        });
-      }
-
-      // Function to change the video
-      function changeVideo(index) {
-        // Pause and hide all videos
-        videos.forEach(video => {
-          video.pause();
-          video.style.display = 'none';
-        });
-
-        // Show and play the selected video
-        currentVideoIndex = index;
-        videos[currentVideoIndex].style.display = 'block';
-        videos[currentVideoIndex].currentTime = 0;
-        videos[currentVideoIndex].play();
-
-        // Update the buttons' active state
-        updateActiveButtons(currentVideoIndex);
-      }
-
-      // Event listener for buttons to change videos
-      allButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          const index = button.getAttribute('data-index');
-          changeVideo(index);
-        });
-      });
-
-      // Play the next video when the current one ends
-      videos.forEach((video, index) => {
-        video.addEventListener('ended', () => {
-          changeVideo((currentVideoIndex + 1) % videos.length);
-        });
-      });
-    </script>
-
+    <script src="../static/js/navbar.js"></script>
+    <script src="../static/js/carousal_videos.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
       AOS.init();
     </script>
