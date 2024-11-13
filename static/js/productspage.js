@@ -246,8 +246,8 @@ function getProductData(product) {
                 '../static/img/lookintosection/smart-meter/samrt_meter_T.png',
             ],
             content: [
-                'Airflow monitors track and measure air movement and velocity, ensuring proper ventilation and maintaining optimal air quality in various environments.',
-                '415 Va , 3 Phase , 50/60 Hz ',
+                'A smart meter with 4G LTE offers remote monitoring, optimized power usage, and real-time consumption reports for efficient energy management.',
+                '415 V (3-phase, 50/60 Hz)',
                 '4G LTE Cellular Network',
                 '0.02A',
                 '4.8 W'
